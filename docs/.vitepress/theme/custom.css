@@ -1,3 +1,5 @@
+@import "@wikimedia/codex/dist/codex.style.css";
+
 @media screen and (min-width: 768px) {
   :root {
     --vp-nav-height: 78px;

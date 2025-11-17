@@ -6,31 +6,31 @@ export const scenarios: Scenario[] = [
     name: "Search",
     description:
       "Learn how to properly attribute Wikipedia content in search results",
-    url: "/attribution-signals/search",
+    url: "/scenarios/search",
   },
   {
     id: "ai-assistants",
     name: "AI Assistants",
     description: "Guidelines for attribution in conversational interfaces",
-    url: "/attribution-signals/ai-assistants",
+    url: "/scenarios/ai-assistants",
   },
   {
     id: "audio",
     name: "Audio",
     description: "Description goes here",
-    url: "/attribution-signals/audio",
+    url: "/scenarios/audio",
   },
   {
     id: "games-rich-experiences",
     name: "Games & Rich Experiences",
     description: "Best practices for games and interactive applications",
-    url: "/attribution-signals/games-rich-experiences",
+    url: "/scenarios/games-rich-experiences",
   },
   {
     id: "media-outlets",
     name: "Media Outlets",
     description: "Description goes here",
-    url: "/attribution-signals/media-outlets",
+    url: "/scenarios/media-outlets",
   },
 ];
 
