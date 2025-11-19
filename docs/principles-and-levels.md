@@ -1,3 +1,7 @@
+<script setup>
+import { attributionLevels } from './.vitepress/data'
+</script>
+
 # Principles and levels
 
 ## Principles
@@ -21,5 +25,15 @@ Emphasises content created and verified by humans, gives credit to the community
 ## Levels of attribution
 
 **Based on the used signals**. We have defined different levels of attribution for reusers to consider.
+
+<GridLayout>
+  <Card 
+    variant="default"
+    v-for="attributionLevel in attributionLevels" 
+    :key="attributionLevel.id" 
+    :title="attributionLevel.name" 
+    :description="attributionLevel.description" 
+  />
+</GridLayout>
 
 **Contributing back**. For qualifying to the above levels, reusers need to meet the corresponding level of contribution. This is an metric-driven way to confirm that attribution is providing a way that allows people to engage with Wikimedia projects.

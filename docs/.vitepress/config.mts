@@ -27,7 +27,7 @@ export default defineConfig({
         text: "Reuse Scenarios",
         collapsed: true,
         items: [
-          { text: "Overview", link: "/scenarios" },
+          { text: "Overview", link: "/scenarios/overview" },
           ...scenarios.map((scenario) => ({
             text: scenario.name,
             link: scenario.url,

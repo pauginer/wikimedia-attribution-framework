@@ -14,6 +14,7 @@ The framework needs to be observed carefully by companies reusing Wikimedia cont
 
 <GridLayout>
   <Card 
+    variant="link"
     v-for="scenario in scenarios" 
     :key="scenario.id" 
     :title="scenario.name" 

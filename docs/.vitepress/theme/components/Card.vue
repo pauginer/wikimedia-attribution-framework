@@ -1,16 +1,31 @@
 <script setup lang="ts">
-defineProps<{
-  title: string;
-  description?: string;
-  url: string;
-}>();
+withDefaults(
+  defineProps<{
+    title: string;
+    description?: string | string[];
+    url: string;
+    variant?: "link" | "default";
+  }>(),
+  {
+    variant: "link",
+  }
+);
 </script>
 
 <template>
-  <a :href="url" class="card">
-    <h3 class="card-title">{{ title }}</h3>
-    <p class="card-description">{{ description }}</p>
-  </a>
+  <component
+    :is="variant === 'link' ? 'a' : 'div'"
+    :href="variant === 'link' ? url : undefined"
+    class="card"
+  >
+    <p class="card-title">{{ title }}</p>
+    <div class="card-description">
+      <ul v-if="Array.isArray(description)">
+        <li v-for="item in description" :key="item">{{ item }}</li>
+      </ul>
+      <p v-else-if="description">{{ description }}</p>
+    </div>
+  </component>
 </template>
 
 <style scoped>
@@ -24,7 +39,7 @@ defineProps<{
   transition: all 0.3s ease;
 }
 
-.card:hover {
+a.card:hover {
   border-color: var(--vp-c-brand-1);
 }
 
@@ -32,6 +47,9 @@ defineProps<{
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
   font-weight: 600;
+}
+
+a .card-title {
   color: var(--vp-c-brand-1);
 }
 
