@@ -9,3 +9,7 @@
 .VPNavBarTitle .title span {
   white-space: normal;
 }
+
+#VPSidebarNav div:first-of-type section {
+  padding-bottom: 12px;
+}
