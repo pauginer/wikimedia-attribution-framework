@@ -1,5 +1,5 @@
 <script setup>
-import { useFilter } from './.vitepress/useFilter'
+import { useFilter } from '../.vitepress/useFilter'
 
 const { filteredItems } = useFilter()
 </script>

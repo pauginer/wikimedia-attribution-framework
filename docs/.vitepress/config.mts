@@ -25,7 +25,7 @@ export default defineConfig({
       },
       {
         text: "Reuse Scenarios",
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: "Overview", link: "/scenarios/overview" },
           ...scenarios.map((scenario) => ({
@@ -36,11 +36,11 @@ export default defineConfig({
       },
       {
         text: "Attribution Signals",
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: "Overview",
-            link: "/attribution-signals",
+            link: "/attribution-signals/overview",
           },
           ...attributionSignals.map((signal) => ({
             text: signal.name,
