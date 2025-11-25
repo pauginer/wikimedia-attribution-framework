@@ -2,12 +2,30 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --vp-nav-height: 78px;
+    --vp-nav-height: 88px;
   }
+
+  aside.VPSidebar .curtain {
+    top: -88px;
+  }
+}
+
+.VPNavBarTitle .title {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .VPNavBarTitle .title span {
   white-space: normal;
+  width: min-content;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.VPNavBarTitle .title img {
+  width: 34px;
+  height: auto;
 }
 
 #VPSidebarNav div:first-of-type section {
