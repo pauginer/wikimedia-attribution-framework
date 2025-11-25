@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Wikipedia Attribution Guidelines",
   description:
     "Attribution Guidelines for references and using Wikipedia content",
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     // nav: [
