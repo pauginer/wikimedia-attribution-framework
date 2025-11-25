@@ -16,7 +16,8 @@ Explore best practices for attribution in the different scenarios.
     v-for="scenario in scenarios" 
     :key="scenario.id" 
     :title="scenario.name" 
-    :description="scenario.description" 
+    :description="scenario.description"
+    :url="scenario.url"
   />
 </div>
 
@@ -24,4 +25,4 @@ Explore best practices for attribution in the different scenarios.
 
 The above list does not cover all possible scenarios in which Wikimedia contents are reused. Please, share new scenarios not documented where you may need guidance for attribution.
 
-[Propose a new scenario]()
+[Propose a new scenario](https://wikimedia.org)
