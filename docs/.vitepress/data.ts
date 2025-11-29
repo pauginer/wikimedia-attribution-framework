@@ -5,31 +5,31 @@ export const scenarios: Scenario[] = [
     id: "search",
     name: "Search",
     description:
-      "Learn how to properly attribute Wikipedia content in search results",
+      "Search results displaying encyclopedic content, images, or structured data.",
     url: "/scenarios/search",
   },
   {
     id: "ai-assistants",
     name: "AI Assistants",
-    description: "Guidelines for attribution in conversational interfaces",
+    description: "Integrating Wikimedia text, media, or data into AI-driven responses.",
     url: "/scenarios/ai-assistants",
   },
   {
     id: "audio",
     name: "Audio",
-    description: "Description goes here",
+    description: "Audio media or voice assistants using content where source citation must remain transparent.",
     url: "/scenarios/audio",
   },
   {
     id: "games-rich-experiences",
-    name: "Games & Rich Experiences",
-    description: "Best practices for games and interactive applications",
+    name: "Games and Rich Experiences",
+    description: "Incorporating Wikimedia text, images, or data in educational and interactive environments.",
     url: "/scenarios/games-rich-experiences",
   },
   {
     id: "media-outlets",
     name: "Media Outlets",
-    description: "Description goes here",
+    description: "Using Wikimedia text, images, or data in articles, videos, or broadcasts.",
     url: "/scenarios/media-outlets",
   },
 ];

@@ -3,9 +3,9 @@ import { scenarios, attributionSignals } from "./data";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Wikipedia Attribution Guidelines",
+  title: "Wikipedia Attribution Framework",
   description:
-    "Attribution Guidelines for references and using Wikipedia content",
+    "Attribution Framework for reusers of Wikimedia projects' content.",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
