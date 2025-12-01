@@ -4,18 +4,18 @@ import { scenarios } from './.vitepress/data'
 
 # Wikimedia Attribution Framework
 
-**How to use Wikimedia contents in a sustainable way?**
+**Sustainable Reuse of Wikimedia Content**
 
-**The Wikimedia Attribution Framework** helps organizations and individuals when reusing Wikimedia contents by providing recommended attribution approaches. Check the scenarios that are relevant to each usecase, and the signals that can be used to provide great attribution.
+Wikimedia’s content is created by a global community of volunteers who share their knowledge freely. Every day, that free knowledge is surfaced in search engines, apps, AI assistants, in social media, media publications, and countless other contexts by “reusers”.
 
-This framework provides reusers with requirements and recommendations to ensure recognition is clear and consistent across contexts. Attribution is essential for fair acknowledgment and active awareness of human-made, verified high quality content.
+The Wikimedia Attribution Framework provides reusers with requirements and recommendations to ensure recognition is clear and consistent across contexts. Attribution is essential for fair **acknowledgment and active awareness** of Wikimedia’s human-made, verified high quality content. It is a key factor in the continued growth and sustainability of the free knowledge ecosystem.
 
-Reusers can help disseminate relevant contents for their audience, while also helping grow the free knowledge ecosystem. In today’s rapidly evolving digital world, each act of attribution helps keep the circle of free, human-produced knowledge alive by protecting trust, ensuring transparency, and fostering participation.
+Reusers can help disseminate relevant contents for their audience, while also helping to keep the circle of free, human-produced knowledge alive by protecting trust, ensuring transparency, and fostering participation.
 
 
 ## Reuse scenarios
 
-These guidelines are applicable to anyone reusing Wikimedia content. Nevertheless, it addresses major reuse scenarios that were selected due to their impact:
+We identified and prioritized reuse scenarios where Wikimedia content has the greatest reach, but are applicable to **anyone reusing Wikimedia content**. In some of the following reuse contexts, attribution practices urgently need clarity. 
 
 <GridLayout>
   <Card 
