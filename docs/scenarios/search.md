@@ -22,7 +22,7 @@ Essential signals safeguard visibility for the volunteer-created projects that p
 
 Identify the Wikimedia project from which the information originates. Use text or, exceptionally, the project’s brand mark (see 6) if space is limited.
 
-See implementation guidance
+[See implementation guidance](../attribution-signals/source.html#implementation)
 
 **Data sources**
 - Available for crawlers: Must be parsed or inferred directly from the URL (needs normalization)
