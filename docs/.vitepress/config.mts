@@ -23,6 +23,7 @@ export default defineConfig({
         items: [
           { text: "Overview", link: "/" },
           { text: "Principles and levels", link: "/principles-and-levels" },
+          { text: "Adoption", link: "/adoption" },
         ],
       },
       {
