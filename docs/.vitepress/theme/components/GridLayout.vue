@@ -4,11 +4,13 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="less">
+@import (reference) "@wikimedia/codex-design-tokens/theme-wikimedia-ui.less";
+
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(@size-1600, 1fr));
+  gap: @spacing-100;
+  margin-top: @spacing-100;
 }
 </style>

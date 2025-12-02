@@ -216,9 +216,8 @@ function updateField(field: keyof FormData, value: any) {
 }
 </script>
 
-<style lang="less">
+<style scoped lang="less">
 @import (reference) "@wikimedia/codex-design-tokens/theme-wikimedia-ui.less";
-@import (reference) "@wikimedia/codex/mixins/link.less";
 
 .attribution-controls {
   display: flex;

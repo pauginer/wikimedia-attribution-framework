@@ -17,9 +17,11 @@ const { allScenarios, selectedFilter, selectFilter } = useFilter();
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="less">
+@import (reference) "@wikimedia/codex-design-tokens/theme-wikimedia-ui.less";
+
 .filter-buttons {
   display: flex;
-  column-gap: 8px;
+  column-gap: @size-25;
 }
 </style>

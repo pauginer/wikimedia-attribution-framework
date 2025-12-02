@@ -97,7 +97,7 @@ const siteName = computed(() => {
 @import (reference) "@wikimedia/codex-design-tokens/theme-wikimedia-ui.less";
 
 .wikipedia-attribution-demo-wrapper {
-  background-color: var(--vp-sidebar-bg-color);
+  background-color: var(@background-color-neutral-subtle);
   padding: @spacing-100;
 }
 
@@ -108,7 +108,7 @@ const siteName = computed(() => {
 }
 
 .card-preview {
-  width: 100%;
+  width: @size-full;
 }
 
 @media (max-width: 768px) {

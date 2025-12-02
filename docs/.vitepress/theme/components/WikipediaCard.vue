@@ -60,30 +60,10 @@ import { CdxIcon, CdxThumbnail } from "@wikimedia/codex";
 import type { Thumbnail } from "@wikimedia/codex";
 
 interface Props {
-  /**
-   * If provided, the Card will be a link to this URL.
-   */
   url?: string;
-
-  /**
-   * Icon displayed at the start of the Card.
-   */
   icon?: Icon | string;
-
-  /**
-   * Thumbnail image data for the Card.
-   */
   thumbnail?: Thumbnail | null;
-
-  /**
-   * Option to force a thumbnail layout.
-   */
   forceThumbnail?: boolean;
-
-  /**
-   * Optional custom icon for the placeholder shown when forceThumbnail is true but no
-   * thumbnail is provided.
-   */
   customPlaceholderIcon?: Icon | string;
 }
 

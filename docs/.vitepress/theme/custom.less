@@ -2,10 +2,16 @@
 @import (reference) "@wikimedia/codex-design-tokens/theme-wikimedia-ui.less";
 @import (reference) "@wikimedia/codex/mixins/link.less";
 
+// :root {
+//   --vp-font-family-base: @font-family-base;
+// }
+
 @media screen and (min-width: 768px) {
   :root {
     --vp-nav-height: 88px;
     --vp-c-brand-1: @color-progressive;
+    --vp-c-divider: @border-color-muted;
+    --vp-sidebar-bg-color: @background-color-neutral-subtle;
   }
 
   aside.VPSidebar .curtain {
@@ -13,6 +19,7 @@
   }
 }
 
+// Header and sidebar
 .VPNavBarTitle .title {
   display: flex;
   flex-direction: row-reverse;
@@ -36,6 +43,21 @@
 
 #VPSidebarNav div section {
   padding-bottom: @size-75;
+}
+
+#VPSidebarNav h1,
+#VPSidebarNav h2 {
+  font-family: @font-family-base;
+}
+
+// General styles
+h1,
+h2 {
+  font-family: @font-family-serif;
+}
+
+.vp-doc a {
+  text-decoration: none;
 }
 
 p img + em {
