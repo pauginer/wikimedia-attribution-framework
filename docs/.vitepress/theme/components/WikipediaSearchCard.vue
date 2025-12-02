@@ -113,7 +113,7 @@ const defaultDescription =
 
 // Default thumbnail URL
 const defaultThumbnail = {
-  url: "https://upload.wikimedia.org/wikipedia/en/e/e1/Untitled_acrylic_and_mixed_media_on_canvas_by_--Jean-Michel_Basquiat--%2C_1984.jpg",
+  url: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Lspn_comet_halley.jpg",
 };
 
 const cardUrl = computed(() => {
@@ -356,13 +356,15 @@ const computedChips = computed(() => {
 
   &__thumbnail.cdx-thumbnail {
     flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0;
 
     .cdx-thumbnail__placeholder,
     .cdx-thumbnail__image {
       object-fit: cover;
       width: @size-400;
       height: @size-400;
-      border-radius: @border-radius-base;
     }
   }
 
