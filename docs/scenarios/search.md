@@ -18,14 +18,24 @@ At the most basic level, when Wikimedia content appears in search results (wheth
 
 Essential signals safeguard visibility for the volunteer-created projects that power the information delivered by search engines. They provide users with a transparent path to verify, explore, and potentially engage with the ecosystem where the knowledge originated.
 
+
+
 ![Search signal example](../public/media/search-signals-essential.png)
+*1. [Source](#source) • 2. [Author](#author) • 3. [Link](#link) • 4. [Title](#title) • 5. [License](#license) • 6. [Brand mark](#brand-mark)*
+
+<!-- • 7. [Modification disclaimer](#modification-disclaimer)*-->
 
 
-### 1. [Source](../attribution-signals/source.html) 
 
-*Required* • [Implementation guidance](../attribution-signals/source.html#implementation)
+____
+
+### 1. [Source](../attribution-signals/source.html) {#source}
+
+*Required*
 
 Identify the Wikimedia project from which the information originates. Use text or, exceptionally, the project’s brand mark (see 6) if space is limited.
+
+[Implementation guidance →](../attribution-signals/source.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/source.html#data)):
 - Available for crawlers: Must be parsed or inferred directly from the URL (needs normalization)
@@ -35,11 +45,13 @@ Identify the Wikimedia project from which the information originates. Use text o
 **Visibility on wiki.** High: Immediately visible at the source
 
 
-### 2. [Author](../attribution-signals/author.html) 
+### 2. [Author](../attribution-signals/author.html) {#author}
 
-*Required based on license* • [Implementation guidance](../attribution-signals/author.html#implementation)
+*Required based on license*
 
 When displaying media files (e.g., from Wikimedia Commons) in result pages, it’s important to state or provide direct access to information about the author.
+
+[Implementation guidance →](../attribution-signals/author.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/author.html#data)):
 - Available for crawlers
@@ -48,11 +60,13 @@ When displaying media files (e.g., from Wikimedia Commons) in result pages, it�
 **Visibility on wiki.** Varies per project: e.g., Immediately visible in file pages for Commons, requires reviewing the article history on Wikipedia.
 
 
-### 3. [Link](../attribution-signals/link.html) 
+### 3. [Link](../attribution-signals/link.html) {#link}
 
-*Required* • [Implementation guidance](../attribution-signals/link.html#implementation)
+*Required*
 
 Provide direct access to the specific Wikimedia project page where the content in the results is being drawn from.
+
+[Implementation guidance →](../attribution-signals/link.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/link.html#data)):
 - Available for crawlers
@@ -64,11 +78,13 @@ Provide direct access to the specific Wikimedia project page where the content i
 **Visibility on wiki.** High: Immediately visible at the source
 
 
-### 4. [Title](../attribution-signals/title.html) 
+### 4. [Title](../attribution-signals/title.html) {#title}
 
-*Required* • [Implementation guidance](../attribution-signals/title.html#implementation)
+*Required*
 
 Identify the name of the media or source page being retrieved. This is key for search engine users to identify relevance.
+
+[Implementation guidance →](../attribution-signals/title.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/title.html#data)):
 - Available for crawlers
@@ -78,11 +94,13 @@ Identify the name of the media or source page being retrieved. This is key for s
 **Visibility on wiki.** High: Immediately visible at the source
 
 
-### 5. [License](../attribution-signals/license.html) 
+### 5. [License](../attribution-signals/license.html) {#license}
 
-*Required by license type* • [Implementation guidance](../attribution-signals/license.html#implementation)
+*Required by license type*
 
 You must find an appropriate way to indicate the license of reused content. Particularly required if the license implies any usage restrictions.
+
+[Implementation guidance →](../attribution-signals/license.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/license.html#data)):
 - Available for crawlers
@@ -92,11 +110,13 @@ You must find an appropriate way to indicate the license of reused content. Part
 **Visibility on wiki.** High: Visible at the source
 
 
-### 6. [Brand mark](../attribution-signals/brand-mark.html) 
+### 6. [Brand mark](../attribution-signals/brand-mark.html) {#brand-mark}
 
-*Required if source isn’t stated. Otherwise, recommended.* • [Implementation guidance](../attribution-signals/brand-mark.html#implementation)
+*Required if source isn’t stated. Otherwise, recommended.*
 
 Use brand marks to visually identify the source of the information being reused. Might replace the source when space is limited.
+
+[Implementation guidance →](../attribution-signals/brand-mark.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/brand-mark.html#data)):
 - Available for crawlers (Favicon)
@@ -109,15 +129,17 @@ Use brand marks to visually identify the source of the information being reused.
 
 ![Modification disclaimer example](../public/media/search-signals-modification.png#--float)
 
-### [Modification disclaimer](../attribution-signals/modification-disclaimer.html) 
+### 7. [Modification disclaimer](../attribution-signals/modification-disclaimer.html)  {#modification-disclaimer}
 
-*Required* • [Implementation guidance](../attribution-signals/modification-disclaimer.html#implementation)
+*Required*
 
 Modifications or additions made to Wikimedia content or media files need to be announced in a way that fits the medium. 
 
 We recommend displaying disclaimers associated to aggregated content too, such as the one produced by AI search assistants (left image). 
 
 Under no circumstances should aggregate content be attributed to a single source (right image).
+
+[Implementation guidance →](../attribution-signals/modification-disclaimer.html#implementation)
 
 --- {.clear}
 
@@ -129,9 +151,9 @@ Beyond essential attribution, search results should help users assess the reliab
 
 ### [Reference count](../attribution-signals/reference-count.html) 
 
-*Recommended* • [Implementation guidance](../attribution-signals/reference-count.html#implementation)
-
 Use this Wikipedia-specific credibility signal to expose the number of sources backing an article’s content.
+
+[Implementation guidance →](../attribution-signals/reference-count.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/reference-count.html#data)):
 - MediaWiki REST API
@@ -142,9 +164,9 @@ Use this Wikipedia-specific credibility signal to expose the number of sources b
 
 ### [Contributor count](../attribution-signals/contributor-count.html) 
 
-*Recommended* • [Implementation guidance](../attribution-signals/contributor-count.html#implementation)
-
 This trust signal indicates the number of volunteers that have contributed to create or gather the information available in the original Wikimedia project page.
+
+[Implementation guidance →](../attribution-signals/contributor-count.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/contributor-count.html#data)):
 - Coming soon...
@@ -155,9 +177,9 @@ This trust signal indicates the number of volunteers that have contributed to cr
 
 ### [Page views](../attribution-signals/page-views.html) 
 
-*Recommended* • [Implementation guidance](../attribution-signals/page-views.html#implementation)
-
 Use this signal to express the total number of views that a specific Wikimedia page has received in a predefined period of time.
+
+[Implementation guidance →](../attribution-signals/page-views.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/page-views.html#data)):
 - Coming soon...
@@ -168,10 +190,9 @@ Use this signal to express the total number of views that a specific Wikimedia p
 
 ### [Attribution count](../attribution-signals/attribution-count.html) 
 
-*Recommended* • [Implementation guidance](../attribution-signals/attribution-count.html#implementation)
-
 Use this signal to indicate (numerically or not) the popularity of a specific resource in your system, based (for example) on the number of impressions.
 
+[Implementation guidance →](../attribution-signals/attribution-count.html#implementation)
 
 
 ## Recency of information
@@ -181,10 +202,10 @@ A unique feature of Wikimedia projects is that they are continuously updated by 
 
 ### [Trending indicator](../attribution-signals/trending-indicator.html) 
 
-*Recommended* • [Implementation guidance](../attribution-signals/trending-indicator.html#implementation)
 
 Use this attribute to flag Wikipedia articles that are experiencing an unusual volume of recent activity, such as sharp increases in reads and/or edits that often correlate with unfolding events.
 
+[Implementation guidance →](../attribution-signals/trending-indicator.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/trending-indicator.html#data)):
 - Coming soon...
@@ -194,14 +215,16 @@ Use this attribute to flag Wikipedia articles that are experiencing an unusual v
 
 ### [Last update](../attribution-signals/last-update.html) 
 
-*Recommended* • [Implementation guidance](../attribution-signals/last-update.html#implementation)
 
 Use this attribute to display the timestamp of the most recent edit done to the Wikimedia page being retrieved or reused (e.g., “Last update 22 September 2025”)
+
+[Implementation guidance →](../attribution-signals/last-update.html#implementation)
 
 **Data sources** ([more details](../attribution-signals/last-update.html#data)):
 - Coming soon...
 
 **Visibility on wiki.** Medium: Available in pages’ history (requires navigation).
+
 
 
 
@@ -212,8 +235,7 @@ Attribution is not only about recognizing past contributions but also about sust
 
 ### [Participation CTA](../attribution-signals/participation-cta.html) 
 
-*Recommended* • [Implementation guidance](../attribution-signals/participation-cta.html#implementation)
-
 Use participation CTAs to provide context-appropriate prompts to invite your audience to contribute to the Wikimedia ecosystem.
 
+[Implementation guidance →](../attribution-signals/participation-cta.html#implementation)
 
