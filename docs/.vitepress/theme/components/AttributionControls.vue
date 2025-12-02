@@ -1,9 +1,9 @@
 <template>
   <div class="attribution-controls">
     <div class="attribution-form">
-      <h2>Attribution Signals</h2>
+      <h4>Attribution Signals</h4>
       <div class="form-container">
-        <h3>Essential</h3>
+        <h5>Essential</h5>
         <div class="form-field">
           <cdx-field>
             <template #label>Source</template>
@@ -32,7 +32,7 @@
             />
           </cdx-field>
         </div>
-        <h3>Recommended</h3>
+        <h5>Recommended</h5>
         <cdx-field>
           <cdx-checkbox
             :model-value="modelValue.activityIndicator"
@@ -82,7 +82,7 @@
     </div>
 
     <div class="content-form">
-      <h2>Content Settings</h2>
+      <h4>Content Settings</h4>
       <div class="form-field">
         <cdx-field>
           <template #label>Article Title</template>
@@ -241,13 +241,8 @@ function updateField(field: keyof FormData, value: any) {
   margin-bottom: @spacing-50;
 }
 
-.vp-doc h2 {
+.vp-doc h4 {
   padding: @spacing-100 0;
-  margin: 0;
-}
-
-.vp-doc h3 {
-  padding: 0;
   margin: 0;
 }
 

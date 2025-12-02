@@ -74,9 +74,9 @@ const props = withDefaults(defineProps<Props>(), {
   thumbnail: null,
 });
 
-// Static article data - default description for Jean-Michel Basquiat
+// Static article data - default description for Halley's Comet
 const defaultDescription =
-  "Jean-Michel Basquiat (December 22, 1960 – August 12, 1988) was an American artist who rose to success during the 1980s as part of the Neo-expressionism movement. Basquiat first achieved fame as part of SAMO, a graffiti duo who wrote enigmatic epigrams in the cultural hotbed of the Lower East Side of Manhattan during the late 1970s, where rap, punk, and street art coalesced into early hip-hop music culture. By the early 1980s, his paintings were being exhibited in galleries and museums internationally.";
+  "Halley's Comet is the only known short-period comet that is consistently visible to the naked eye from Earth appearing every 72–80 years, though with the majority of recorded apparitions (25 of 30) occurring after 75–77 years.";
 
 // Default thumbnail URL
 const defaultThumbnail = {

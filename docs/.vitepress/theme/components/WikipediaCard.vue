@@ -3,14 +3,10 @@
     <div class="cdx-card__main-content">
       <div class="cdx-card__header">
         <div v-if="icon" class="cdx-card__favicon-container">
-          <cdx-icon :icon="icon" class="cdx-card__favicon" size="medium" />
+          <cdx-icon :icon="cdxIconLogoWikipedia" size="medium" />
         </div>
         <div v-else class="cdx-card__favicon-container">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png"
-            alt="Wikipedia Logo"
-            class="cdx-card__favicon"
-          />
+          <cdx-icon :icon="cdxIconLogoWikipedia" size="medium" />
         </div>
 
         <div class="cdx-card__site-info">
@@ -35,30 +31,30 @@
       <div v-if="$slots.chips" class="cdx-card__chips">
         <slot name="chips" />
       </div>
-      <div v-if="$slots.description" class="cdx-card__snippet">
-        <slot name="description" />
+      <div class="cdx-card__content">
+        <div v-if="$slots.description" class="cdx-card__snippet">
+          <slot name="description" />
+        </div>
+        <cdx-thumbnail
+          v-if="thumbnail"
+          :thumbnail="thumbnail"
+          :placeholder-icon="customPlaceholderIcon"
+          class="cdx-card__thumbnail"
+        />
       </div>
 
       <div v-if="$slots['extra-content']" class="cdx-card__extra-content">
         <slot name="extra-content" />
       </div>
     </div>
-
-    <cdx-thumbnail
-      v-if="thumbnail"
-      :thumbnail="thumbnail"
-      :placeholder-icon="customPlaceholderIcon"
-      class="cdx-card__thumbnail"
-    />
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
-import type { Icon } from "@wikimedia/codex-icons";
+import { cdxIconLogoWikipedia, type Icon } from "@wikimedia/codex-icons";
 import { CdxIcon, CdxThumbnail } from "@wikimedia/codex";
 import type { Thumbnail } from "@wikimedia/codex";
-
 interface Props {
   url?: string;
   icon?: Icon | string;
@@ -123,9 +119,10 @@ const cardLink = computed(() => (isLink.value ? props.url : undefined));
     justify-content: center;
     width: calc(@size-icon-medium + 8px);
     height: calc(@size-icon-medium + 8px);
-    border-radius: 50%;
     padding: 4px;
     flex-shrink: 0;
+    border: @border-subtle;
+    border-radius: @size-50;
   }
 
   &__favicon {
@@ -136,34 +133,31 @@ const cardLink = computed(() => (isLink.value ? props.url : undefined));
   }
 
   &__site-info {
-    display: flex;
-    flex-direction: column;
-    gap: @spacing-12;
     min-width: 0;
+  }
+
+  &__site-name,
+  &__site-url {
+    color: @color-base;
+    font-size: @font-size-x-small;
+    font-weight: @font-weight-normal;
+    line-height: @line-height-x-small;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   &__site-name {
     color: @color-base;
-    font-size: @font-size-small;
-    font-weight: @font-weight-normal;
-    line-height: @line-height-small;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
   }
 
   &__site-url {
     color: @color-subtle;
-    font-size: @font-size-x-small;
-    line-height: @line-height-small;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
   }
 
   &__title-link {
     color: @color-progressive;
-    font-size: @font-size-x-large;
-    font-weight: @font-weight-bold;
-    line-height: @line-height-medium;
+    font-size: @font-size-medium;
+    font-weight: @font-weight-bold !important;
     text-decoration: none;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -198,15 +192,10 @@ const cardLink = computed(() => (isLink.value ? props.url : undefined));
     overflow-wrap: break-word;
   }
 
-  &__extra-content {
-    padding: 0;
-    color: @color-subtle;
-    font-size: @font-size-x-small;
-    line-height: @line-height-small;
-
-    a {
-      .cdx-mixin-link();
-    }
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: @spacing-100;
   }
 
   &__thumbnail.cdx-thumbnail {
@@ -215,9 +204,20 @@ const cardLink = computed(() => (isLink.value ? props.url : undefined));
     .cdx-thumbnail__placeholder,
     .cdx-thumbnail__image {
       object-fit: cover;
-      width: @size-800;
-      height: @size-800;
-      border-radius: 1rem;
+      width: @size-400;
+      height: @size-400;
+      border-radius: @border-radius-base;
+    }
+  }
+
+  &__extra-content {
+    padding: 0;
+    color: @color-subtle;
+    font-size: @font-size-x-small;
+    line-height: @line-height-small;
+
+    a {
+      .cdx-mixin-link();
     }
   }
 }

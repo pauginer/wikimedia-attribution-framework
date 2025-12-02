@@ -5,7 +5,7 @@
         <WikipediaSearchCard
           :site-name="siteName"
           :brandmark="formData.brandmarkAttribution"
-          :title="formData.articleTitle || 'Jean-Michel Basquiat'"
+          :title="formData.articleTitle || `Halley's Comet`"
           :activity-level="
             formData.activityIndicator ? formData.activityLevel : undefined
           "
@@ -69,7 +69,7 @@ interface FormData {
 }
 
 const formData = ref<FormData>({
-  articleTitle: "Jean-Michel Basquiat",
+  articleTitle: "Halley's Comet",
   numberOfSources: 32,
   numberOfViews: 32000,
   numberOfContributors: 80,
@@ -88,7 +88,7 @@ const showControls = ref(false);
 
 const siteName = computed(() => {
   return formData.value.sourceAttribution === "name+language"
-    ? "English Wikipedia"
+    ? "Wikipedia • English"
     : "Wikipedia";
 });
 </script>
@@ -97,7 +97,7 @@ const siteName = computed(() => {
 @import (reference) "@wikimedia/codex-design-tokens/theme-wikimedia-ui.less";
 
 .wikipedia-attribution-demo-wrapper {
-  background-color: var(@background-color-neutral-subtle);
+  background-color: @background-color-neutral-subtle;
   padding: @spacing-100;
 }
 
