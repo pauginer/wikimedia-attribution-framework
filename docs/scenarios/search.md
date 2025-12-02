@@ -6,11 +6,11 @@ Search platforms amplify Wikimedia’s reach, and are a primary gateway to free 
 
 <WikipediaAttributionDemo />
 
-
+<!---
 ![Search attribution overview](../public/media/search-overview.png)
 *Mockup of a Search engine results page displaying minimal (left) and a combination of essential and recommended attribution signals (right)*
 
-> **Note** All the illustrations provided are only for orientation. Reusers may adjust the appearance of the signals to follow their design guidelines and their context’s visual style in order to ensure consistency.
+> **Note** All the illustrations provided are only for orientation. Reusers may adjust the appearance of the signals to follow their design guidelines and their context’s visual style in order to ensure consistency. -->
 
 ## Essential attribution
 
@@ -25,7 +25,7 @@ Essential signals safeguard visibility for the volunteer-created projects that p
 
 <!-- • 7. [Modification disclaimer](#modification-disclaimer)*-->
 
-
+> **Note** All the illustrations provided are only for orientation. Reusers may adjust the appearance of the signals to follow their design guidelines and their context’s visual style in order to ensure consistency. 
 
 ____
 
