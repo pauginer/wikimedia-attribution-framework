@@ -38,22 +38,24 @@
   padding-bottom: @size-75;
 }
 
-
-p img+em { /* Image caption. In markdown, emphasis right after the image is used as a caption */
-    display: block;
-    font-size: smaller;
-    color: #54595d; /* Codex token: color-subtle */
-    padding: 8px;
-    margin-bottom: 2em;
+p img + em {
+  /* Image caption. In markdown, emphasis right after the image is used as a caption */
+  display: block;
+  font-size: smaller;
+  color: #54595d; /* Codex token: color-subtle */
+  padding: 8px;
+  margin-bottom: 2em;
 }
 
-img[src*=--float]{ /* Images with "--float" appended in the src (after the "#") will float */
-    float: right;
-    margin: 0 2em; 
-    max-width: 33%;
+img[src*="--float"] {
+  /* Images with "--float" appended in the src (after the "#") will float */
+  float: right;
+  margin: 0 2em;
+  max-width: 33%;
 }
 
-hr.clear { /* Allows to use "--- {.clear}" to prevent contents to float after a floating image */
-  clear:both;
+hr.clear {
+  /* Allows to use "--- {.clear}" to prevent contents to float after a floating image */
+  clear: both;
   border: none;
 }
