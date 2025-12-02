@@ -195,11 +195,6 @@ Use this signal to indicate (numerically or not) the popularity of a specific re
 [Implementation guidance →](../attribution-signals/attribution-count.html#implementation)
 
 
-## Recency of information
-
-A unique feature of Wikimedia projects is that they are continuously updated by a global community of volunteers. Providing signals such as last edit date or indicators of trendiness when sharing articles or other Wikimedia resources can help surface this living nature, giving search engine users cues about the dynamism and timeliness of the content being displayed.
-
-
 ### [Trending indicator](../attribution-signals/trending-indicator.html) 
 
 
