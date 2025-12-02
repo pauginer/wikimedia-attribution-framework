@@ -1,5 +1,7 @@
 # Source
 
+<FilterButtons />
+
 Reusers of Wikimedia content must explicitly identify the project they are extracting information from as their Source. Clear sourcing is fundamental for attribution in an information ecosystem where third-party platforms mix and recontextualize Wikimedia content. This recognition supports trust, transparency, and compliance with open licenses.
 Identifying sources ensures that the contributions of Wikimedia volunteers remain visible and that end-users can recognize the origin of the knowledge they are consuming.
 
@@ -7,7 +9,7 @@ We recommend representing the Source attribute in text or verbalizing it in audi
 
 <!-- TODO: Mockups for Source examples-->
 
-## Data sources
+## Data sources {#data}
 
 This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
 
