@@ -107,7 +107,7 @@ Use brand marks to visually identify the source of the information being reused.
 
 ![Modification disclaimer example](../public/media/search-signals-modification.png)
 
-### [Modification disclaimer](../attribution-signals/brand-mark.html) 
+### [Modification disclaimer](../attribution-signals/modification-disclaimer.html) 
 
 *Required* • [Implementation guidance](../attribution-signals/modification-disclaimer.html#implementation)
 
@@ -122,3 +122,95 @@ Under no circumstances should aggregate content be attributed to a single source
 ## Trust and relevance
 
 Beyond essential attribution, search results should help users assess the reliability of the information being surfaced. Signals such as reference counts, editor activity, or readership data make visible the processes of review, participation, and use that underpin Wikimedia projects. Highlighting these cues strengthens the credibility of both the content and the platform reusing it, while guiding audiences toward sources they can trust.
+
+
+### [Reference count](../attribution-signals/reference-count.html) 
+
+*Recommended* • [Implementation guidance](../attribution-signals/reference-count.html#implementation)
+
+Use this Wikipedia-specific credibility signal to expose the number of sources backing an article’s content.
+
+**Data sources** ([more details](../attribution-signals/reference-count.html#data)):
+- MediaWiki REST API
+
+**Visibility on wiki.** Medium: Visible in articles that contain numbered reference lists.
+
+
+
+### [Contributor count](../attribution-signals/contributor-count.html) 
+
+*Recommended* • [Implementation guidance](../attribution-signals/contributor-count.html#implementation)
+
+This trust signal indicates the number of volunteers that have contributed to create or gather the information available in the original Wikimedia project page.
+
+**Data sources** ([more details](../attribution-signals/contributor-count.html#data)):
+- Coming soon...
+
+**Visibility on wiki.** Medium: Visible but requires navigating to a data dashboard from articles’ Revision history
+
+
+
+### [Page views](../attribution-signals/page-views.html) 
+
+*Recommended* • [Implementation guidance](../attribution-signals/page-views.html#implementation)
+
+Use this signal to express the total number of views that a specific Wikimedia page has received in a predefined period of time.
+
+**Data sources** ([more details](../attribution-signals/page-views.html#data)):
+- Coming soon...
+
+**Visibility on wiki.** Medium: Visible but requires navigating to a data dashboard from articles’ Revision history
+
+
+
+### [Attribution count](../attribution-signals/attribution-count.html) 
+
+*Recommended* • [Implementation guidance](../attribution-signals/attribution-count.html#implementation)
+
+Use this signal to indicate (numerically or not) the popularity of a specific resource in your system, based (for example) on the number of impressions.
+
+
+
+## Recency of information
+
+A unique feature of Wikimedia projects is that they are continuously updated by a global community of volunteers. Providing signals such as last edit date or indicators of trendiness when sharing articles or other Wikimedia resources can help surface this living nature, giving search engine users cues about the dynamism and timeliness of the content being displayed.
+
+
+### [Trending indicator](../attribution-signals/trending-indicator.html) 
+
+*Recommended* • [Implementation guidance](../attribution-signals/trending-indicator.html#implementation)
+
+Use this attribute to flag Wikipedia articles that are experiencing an unusual volume of recent activity, such as sharp increases in reads and/or edits that often correlate with unfolding events.
+
+
+**Data sources** ([more details](../attribution-signals/trending-indicator.html#data)):
+- Coming soon...
+
+**Visibility on wiki.** Not available on Wikimedia pages.
+
+
+### [Last update](../attribution-signals/last-update.html) 
+
+*Recommended* • [Implementation guidance](../attribution-signals/last-update.html#implementation)
+
+Use this attribute to display the timestamp of the most recent edit done to the Wikimedia page being retrieved or reused (e.g., “Last update 22 September 2025”)
+
+**Data sources** ([more details](../attribution-signals/last-update.html#data)):
+- Coming soon...
+
+**Visibility on wiki.** Medium: Available in pages’ history (requires navigation).
+
+
+
+## Ecosystem growth
+
+Attribution is not only about recognizing past contributions but also about sustaining the future of free knowledge. By including a clear participation call-to-action (CTA) in search results, reusers can help close the loop. Inviting audiences who benefit from Wikimedia content to also contribute back. This intervention supports the continued growth and renewal of Wikimedia projects, ensuring that the knowledge surfaced today keeps being enriched and expanded by volunteers tomorrow.
+
+
+### [Participation CTA](../attribution-signals/participation-cta.html) 
+
+*Recommended* • [Implementation guidance](../attribution-signals/participation-cta.html#implementation)
+
+Use participation CTAs to provide context-appropriate prompts to invite your audience to contribute to the Wikimedia ecosystem.
+
+
