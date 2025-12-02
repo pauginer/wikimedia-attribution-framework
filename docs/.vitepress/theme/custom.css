@@ -32,3 +32,12 @@
 #VPSidebarNav div:first-of-type section {
   padding-bottom: 12px;
 }
+
+
+p img+em { /* Image caption. In markdown, emphasis right after the image is used as a caption */
+    display: block;
+    font-size: smaller;
+    color: #54595d; /* Codex token: color-subtle */
+    padding: 8px;
+    margin-bottom: 2em;
+}
