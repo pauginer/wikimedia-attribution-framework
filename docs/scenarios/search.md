@@ -21,7 +21,7 @@ Essential signals safeguard visibility for the volunteer-created projects that p
 
 
 ![Search signal example](../public/media/search-signals-essential.png)
-*1. [Source](#source) • 2. [Author](#author) • 3. [Link](#link) • 4. [Title](#title) • 5. [License](#license) • 6. [Brand mark](#brand-mark)*
+1. [Source](#source) • 2. [Author](#author) • 3. [Link](#link) • 4. [Title](#title) • 5. [License](#license) • 6. [Brand mark](#brand-mark)
 
 <!-- • 7. [Modification disclaimer](#modification-disclaimer)*-->
 
@@ -29,212 +29,184 @@ Essential signals safeguard visibility for the volunteer-created projects that p
 
 ____
 
-### 1. [Source](../attribution-signals/source.html) {#source}
+### 1. Source {#source}
 
-*Required*
+`Required`
 
 Identify the Wikimedia project from which the information originates. Use text or, exceptionally, the project’s brand mark (see 6) if space is limited.
+[See full signal spec →]((../attribution-signals/source.html))
 
-[Implementation guidance →](../attribution-signals/source.html#implementation)
+**Data sources**:
+- Available through URL parsing
+- [Static sitematrix endpoint in Meta Wikimedia](https://meta.wikimedia.org/w/api.php?action=sitematrix&format=json)
+- [Wikimedia Enterprise API](https://enterprise.wikimedia.com/docs/#getting-started)
 
-**Data sources** ([more details](../attribution-signals/source.html#data)):
-- Available for crawlers: Must be parsed or inferred directly from the URL (needs normalization)
-- Static sitematrix endpoint in Meta Wikimedia
-- Wikimedia Enterprise API
-
-**Visibility on wiki.** High: Immediately visible at the source
-
-
-### 2. [Author](../attribution-signals/author.html) {#author}
-
-*Required based on license*
-
-When displaying media files (e.g., from Wikimedia Commons) in result pages, it’s important to state or provide direct access to information about the author.
-
-[Implementation guidance →](../attribution-signals/author.html#implementation)
-
-**Data sources** ([more details](../attribution-signals/author.html#data)):
-- Available for crawlers
-- MediaWiki Action API
-
-**Visibility on wiki.** Varies per project: e.g., Immediately visible in file pages for Commons, requires reviewing the article history on Wikipedia.
+**High visibility on wiki.** This signal is immediately visible at the source.
 
 
-### 3. [Link](../attribution-signals/link.html) {#link}
+### 2. Author {#author}
 
-*Required*
+`Required` based on license
 
-Provide direct access to the specific Wikimedia project page where the content in the results is being drawn from.
+When displaying media files (e.g., from Wikimedia Commons) in result pages, it's important to state or provide direct access to information about the author. [See full signal spec →](../attribution-signals/author.html)
 
-[Implementation guidance →](../attribution-signals/link.html#implementation)
+**Data sources**:
+- [MediaWiki Action API](https://www.mediawiki.org/wiki/API:Action_API) (Allows retrieving the author of Commons media files)
 
-**Data sources** ([more details](../attribution-signals/link.html#data)):
-- Available for crawlers
-- MediaWiki Action API
-- MediaWiki REST API
+**Mixed visibility on wiki.** The visibility of this information varies per project. For example, it's immediately visible in Wikimedia Commons' file pages, but requires reviewing articles' history on Wikipedia.
+
+
+### 3. Link {#link}
+
+`Required`
+
+Provide direct access to the specific Wikimedia project page where the content in the results is being drawn from. [See full signal spec →](../attribution-signals/link.html)
+
+**Data sources**:
+- [MediaWiki Action API](https://www.mediawiki.org/wiki/API:Action_API)
+- [MediaWiki REST API](https://www.mediawiki.org/wiki/API:REST_API)
 - [Wikimedia Enterprise API](https://enterprise.wikimedia.com/docs/#getting-started)
 
 
-**Visibility on wiki.** High: Immediately visible at the source
+**High visibility on wiki.** This information is immediately visible at the source.
 
 
-### 4. [Title](../attribution-signals/title.html) {#title}
+### 4. Title {#title}
 
-*Required*
+`Required`
 
-Identify the name of the media or source page being retrieved. This is key for search engine users to identify relevance.
+Identify the name of the media or source page being retrieved. This is key for search engine users to identify relevance. [See full signal spec →](../attribution-signals/title.html)
 
-[Implementation guidance →](../attribution-signals/title.html#implementation)
+**Data sources**:
+- Available through URL parsing
+- [Wikimedia Enterprise API](https://enterprise.wikimedia.com/docs/#getting-started)
 
-**Data sources** ([more details](../attribution-signals/title.html#data)):
-- Available for crawlers
-- URL parsing
-- Wikimedia Enterprise API
-
-**Visibility on wiki.** High: Immediately visible at the source
+**High visibility on wiki.** This information is immediately visible at the source.
 
 
-### 5. [License](../attribution-signals/license.html) {#license}
+### 5. License {#license}
 
-*Required by license type*
+`Required` by license type
 
-You must find an appropriate way to indicate the license of reused content. Particularly required if the license implies any usage restrictions.
+You must find an appropriate way to indicate the license of reused content. Particularly required if the license implies any usage restrictions. [See full signal spec →](../attribution-signals/license.html)
 
-[Implementation guidance →](../attribution-signals/license.html#implementation)
+**Data sources**:
+- [MediaWiki Action API](https://www.mediawiki.org/wiki/API:Action_API)
+- [Wikimedia Enterprise API](https://enterprise.wikimedia.com/docs/#getting-started)
 
-**Data sources** ([more details](../attribution-signals/license.html#data)):
-- Available for crawlers
-- MediaWiki Action API
-- Wikimedia Enterprise API
-
-**Visibility on wiki.** High: Visible at the source
+**High visibility on wiki.** This information is immediately visible at the source.
 
 
-### 6. [Brand mark](../attribution-signals/brand-mark.html) {#brand-mark}
+### 6. Brand mark {#brand-mark}
 
-*Required if source isn’t stated. Otherwise, recommended.*
+`Required` if the Source isn't stated
 
-Use brand marks to visually identify the source of the information being reused. Might replace the source when space is limited.
+Use brand marks to visually identify the source of the information being reused. Might replace the source when space is limited. [See full signal spec →](../attribution-signals/brand-mark.html)
 
-[Implementation guidance →](../attribution-signals/brand-mark.html#implementation)
-
-**Data sources** ([more details](../attribution-signals/brand-mark.html#data)):
-- Available for crawlers (Favicon)
+**Data sources**:
 - Visual brand marks: [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Wikimedia_Attribution_Guide_Favicons) categorizes brand favicons aligned with Wikimedia identity guidelines
 - Audio brand marks: The [Meta Wikimedia](https://meta.wikimedia.org/wiki/Brand/logo#Wikimedia_Sound_Logo) platform hosts information and audio files that allow implementing the Wikimedia sound logo
 
-**Visibility on wiki.** High: Immediately visible at the source
+**High visibility on wiki.** This information is immediately visible at the source.
 
 
 
 ![Modification disclaimer example](../public/media/search-signals-modification.png#--float)
 
-### 7. [Modification disclaimer](../attribution-signals/modification-disclaimer.html)  {#modification-disclaimer}
+### 7. Modification disclaimer  {#modification-disclaimer}
 
-*Required*
+`Required`
 
 Modifications or additions made to Wikimedia content or media files need to be announced in a way that fits the medium. 
-
 We recommend displaying disclaimers associated to aggregated content too, such as the one produced by AI search assistants (left image). 
 
 Under no circumstances should aggregate content be attributed to a single source (right image).
 
-[Implementation guidance →](../attribution-signals/modification-disclaimer.html#implementation)
+[See full signal spec →](../attribution-signals/modification-disclaimer.html)
 
 --- {.clear}
 
 
 ## Trust and relevance
 
-*Recommended signals*
+`Recommended` signals
 
 Beyond essential attribution, search results should help users assess the reliability of the information being surfaced. Signals such as reference counts, editor activity, or readership data make visible the processes of review, participation, and use that underpin Wikimedia projects. Highlighting these cues strengthens the credibility of both the content and the platform reusing it, while guiding audiences toward sources they can trust.
 
 
-### [Reference count](../attribution-signals/reference-count.html) 
+### Reference count 
 
 Use this Wikipedia-specific credibility signal to expose the number of sources backing an article’s content.
+[See full signal spec →](../attribution-signals/reference-count.html)
 
-[Implementation guidance →](../attribution-signals/reference-count.html#implementation)
+**Data sources**:
+- [MediaWiki REST API](https://www.mediawiki.org/wiki/API:REST_API)
 
-**Data sources** ([more details](../attribution-signals/reference-count.html#data)):
-- MediaWiki REST API
-
-**Visibility on wiki.** Medium: Visible in articles that contain numbered reference lists.
-
+**Medium visibility on wiki.** This information is verifiable when articles contain numbered reference lists.
 
 
-### [Contributor count](../attribution-signals/contributor-count.html) 
 
-This trust signal indicates the number of volunteers that have contributed to create or gather the information available in the original Wikimedia project page.
+### Contributor count 
 
-[Implementation guidance →](../attribution-signals/contributor-count.html#implementation)
+This Wikipedia-specific trust signal indicates the number of volunteers that have contributed to create or gather the information available in the original Wikimedia project page.
+[See full signal spec →](../attribution-signals/contributor-count.html)
 
-**Data sources** ([more details](../attribution-signals/contributor-count.html#data)):
+**Data sources**:
+- [Wikimedia dumps](https://dumps.wikimedia.org/)
+- [MediaWiki REST API](https://www.mediawiki.org/wiki/API:REST_API)
+- [MediaWiki Action API](https://www.mediawiki.org/wiki/API:Action_API)
+
+**Medium visibility on wiki.** This information is visible, but requires accessing a data dashboard from articles' Revision history.
+
+
+
+### Page views 
+
+Use this signal to express the total number of views that a specific Wikimedia page has received in a predefined period of time. [See full signal spec →](../attribution-signals/page-views.html)
+
+**Data sources**:
+- [Wikimedia dumps](https://dumps.wikimedia.org/)
+- [Wikimedia Analytics API](https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html#get-number-of-page-views-for-a-page)
+
+**Medium visibility on wiki.** This information is visible, but requires accessing a data dashboard from articles' Revision history.
+
+
+
+### Attribution count 
+
+Use this signal to indicate (numerically or not) the popularity of a specific resource in your system, based (for example) on the number of impressions. [See full signal spec →](../attribution-signals/attribution-count.html)
+
+
+### Trending indicator 
+
+Use this attribute to flag Wikipedia articles that are experiencing an unusual volume of recent activity, such as sharp increases in reads and/or edits that often correlate with unfolding events. [See full signal spec →](../attribution-signals/trending-indicator.html)
+
+**Data sources**:
 - Coming soon...
 
-**Visibility on wiki.** Medium: Visible but requires navigating to a data dashboard from articles’ Revision history
+**No visibility on wiki.** This information is currently not available on Wikimedia pages.
 
 
+### Last update 
 
-### [Page views](../attribution-signals/page-views.html) 
+Use this attribute to display the timestamp of the most recent edit done to the Wikimedia page being retrieved or reused (e.g., “Last update 22 September 2025”). [See full signal spec →](../attribution-signals/last-update.html)
 
-Use this signal to express the total number of views that a specific Wikimedia page has received in a predefined period of time.
+**Data sources**:
+- [MediaWiki REST API](https://www.mediawiki.org/wiki/API:REST_API)
+- [MediaWiki Action API](https://www.mediawiki.org/wiki/API:Action_API)
+- [Wikimedia Enterprise API](https://enterprise.wikimedia.com/docs/#getting-started)
 
-[Implementation guidance →](../attribution-signals/page-views.html#implementation)
-
-**Data sources** ([more details](../attribution-signals/page-views.html#data)):
-- Coming soon...
-
-**Visibility on wiki.** Medium: Visible but requires navigating to a data dashboard from articles’ Revision history
-
-
-
-### [Attribution count](../attribution-signals/attribution-count.html) 
-
-Use this signal to indicate (numerically or not) the popularity of a specific resource in your system, based (for example) on the number of impressions.
-
-[Implementation guidance →](../attribution-signals/attribution-count.html#implementation)
-
-
-### [Trending indicator](../attribution-signals/trending-indicator.html) 
-
-
-Use this attribute to flag Wikipedia articles that are experiencing an unusual volume of recent activity, such as sharp increases in reads and/or edits that often correlate with unfolding events.
-
-[Implementation guidance →](../attribution-signals/trending-indicator.html#implementation)
-
-**Data sources** ([more details](../attribution-signals/trending-indicator.html#data)):
-- Coming soon...
-
-**Visibility on wiki.** Not available on Wikimedia pages.
-
-
-### [Last update](../attribution-signals/last-update.html) 
-
-
-Use this attribute to display the timestamp of the most recent edit done to the Wikimedia page being retrieved or reused (e.g., “Last update 22 September 2025”)
-
-[Implementation guidance →](../attribution-signals/last-update.html#implementation)
-
-**Data sources** ([more details](../attribution-signals/last-update.html#data)):
-- Coming soon...
-
-**Visibility on wiki.** Medium: Available in pages’ history (requires navigation).
-
-
+**Medium visibility on wiki.** This information is available in pages' history (requires navigation).
 
 
 ## Ecosystem growth
 
-*Recommended signals*
+`Recommended`
 
 Attribution is not only about recognizing past contributions but also about sustaining the future of free knowledge. By including a clear participation call-to-action (CTA) in search results, reusers can help close the loop. Inviting audiences who benefit from Wikimedia content to also contribute back. This intervention supports the continued growth and renewal of Wikimedia projects, ensuring that the knowledge surfaced today keeps being enriched and expanded by volunteers tomorrow.
 
 
-### [Participation CTA](../attribution-signals/participation-cta.html) 
+### Participation CTA 
 
-Use participation CTAs to provide context-appropriate prompts to invite your audience to contribute to the Wikimedia ecosystem.
-
-[Implementation guidance →](../attribution-signals/participation-cta.html#implementation)
+Use participation CTAs to provide context-appropriate prompts to invite your audience to contribute to the Wikimedia ecosystem. [See full signal spec →](../attribution-signals/participation-cta.html)
 
