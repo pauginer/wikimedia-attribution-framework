@@ -59,7 +59,7 @@ Mentioning the Wikimedia editor community as the author clarifies that knowledge
 
 <FilteredContent scenario="ai-assistants">
 
-**AI Assistants**
+### AI Assistants
 
 `Required` based on licensing
 
