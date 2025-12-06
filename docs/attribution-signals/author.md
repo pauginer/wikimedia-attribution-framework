@@ -6,7 +6,6 @@ The exception in our crowdsourced knowledge ecosystem is Wikimedia Commons, a pl
 
 <!-- TODO: Add mockups for Source examples-->
 
-
 ## Data sources {#data}
 
 This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
@@ -15,13 +14,13 @@ This section identifies where and how the data point behind this signal can be o
 
 The Action API is the only option for getting the author (Artist) for media files. Although the example below is referencing Wikimedia Commons, this can also be used for files uploaded directly to other Wikimedia projects (for example, [a photo of Jane Goodall on English Wikipedia](https://en.wikipedia.org/w/api.php?action=query&titles=File%3AJane_Goodall_2010_%28cropped%29.jpg&prop=imageinfo&iiprop=user%7Cextmetadata&format=json)).
 
-```
+```plaintext
 GET https://commons.wikimedia.org/w/api.php?action=query&titles=File:{filename}&prop=imageinfo&iiprop=user|extmetadata&format=json
 ```
+
 The `extmetadata` field contains Artist information, which is the actual author or contributor attribution value for images and other forms of media.
 
 [See documentation→](https://www.mediawiki.org/wiki/API:Action_API)
-
 
 ## Implementation guidance {#implementation}
 
@@ -41,14 +40,13 @@ The `extmetadata` field contains Artist information, which is the actual author 
 
 - For projects other than Commons, you might signal that a list of authors is available at the source using a generic statement (e.g., List of editors available at the source).
 
-
 ## Reuse scenarios
 
 <FilterButtons />
 
 <FilteredContent scenario="search">
 
-### Search 
+### Search
 
 `Required` based on licensing
 
@@ -67,6 +65,5 @@ Acknowledging volunteer authors adds human context, differentiating collaborativ
 
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>
-
 
 <!-- > **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.--!>
