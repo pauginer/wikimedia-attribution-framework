@@ -20,10 +20,11 @@ Public datasets include full revision histories that can be used to calculate ed
 
 The MediaWiki REST API currently offers a [`/page/{title}/history/counts/{type}` endpoint](https://www.mediawiki.org/wiki/API:REST_API/Reference#Get_page_history_counts) that allows requestors to get the total number of editors of an article.
 
-<div><pre>
+```
 GET https://{lang}.{project}.org/w/rest.php/v1/page/{title}/history/counts/editors
+```
 
-[See example](https://test.wikipedia.org/w/rest.php/v1/page/Earth/history/counts/editors)</pre></div>
+[See example](https://test.wikipedia.org/w/rest.php/v1/page/Earth/history/counts/editors)
 
 **Constraints**:
 
@@ -39,17 +40,17 @@ GET https://{lang}.{project}.org/w/rest.php/v1/page/{title}/history/counts/edito
 
 The action API can be used to retrieve contributor information.
 
-<div><pre>
+```plaintext
 GET https://{lang}.{project}.org/w/api.php?action=query&titles={title}&prop=contributors&pclimit=max&format=json
+```
 
-[See example](https://test.wikipedia.org/w/api.php?action=query&titles=Earth&prop=contributors&format=json)</pre></div>
+[See example](https://test.wikipedia.org/w/api.php?action=query&titles=Earth&prop=contributors&format=json)
 
 Using this request will require counting the number of entries included in the returned `contributors` array to get a complete list of editors. Additionally, anonymous editors are counted separately; to get the complete count, contributors will have to be added from the `anoncontributors` property.
 
 **Constraints**: Only the first 500 contributors are returned by default; pagination is required if there are more than 500 contributors.
 
 [See MediaWiki Action API's documentation →](https://www.mediawiki.org/wiki/API:Action_API)
-
 
 ### Wikimedia Enterprise API
 
