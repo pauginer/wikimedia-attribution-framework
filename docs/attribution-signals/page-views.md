@@ -63,7 +63,7 @@ Displaying recent pageview numbers signals public interest and helps users gauge
 
 ### AI Assistants
 
-`Required`
+`Recommended`
 
 Including page views as part of article context reassures users that the topic is widely consulted.
 
