@@ -9,7 +9,6 @@ By clearly flagging modifications, reusers help sustain Wikimedia’s credibilit
 
 <FilterButtons />
 
-
 ## Implementation guidance {#implementation}
 
 ### Minimum requirements
