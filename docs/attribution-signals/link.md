@@ -18,9 +18,10 @@ This section identifies where and how the data point behind this signal can be o
 
 If a page title is available, the query endpoint can be used. The example below links to a functional query on English Wikipedia, but the route can be updated for any project, language, and URL percent encoded page title (e.g.,: `C++` becomes `C%2B%2B`) by changing the values wrapped in curly braces:
 
+```plaintext
+GET https://{language}.{project}.org/w/api.php?action=query&titles={title}&prop=info&inprop=url&format=json
 ```
-GET https://{language}.{project}**.org/w/api.php?action=query&titles={title}&prop=info&inprop=url&format=json
-```
+
 This returns basic metadata about the page, including the last touch date, links for the page itself.
 
 Additionally, this request can return information about multiple pages endpoint using this format: `titles=Title1|Title2|Title3`, for example: `titles=Earth|Main_Page|​​C%2B%2B`.
@@ -31,7 +32,7 @@ Additionally, this request can return information about multiple pages endpoint 
 
 The best option for retrieving this information through REST is to use the page/summary endpoint within the Wikimedia RESTbase API. The example below links to a functional query on English Wikipedia, but the route can be updated for any project, language, and URL percent encoded page title (e.g.,: `C++` becomes `C%2B%2B`) by changing the values wrapped in curly braces:
 
-```
+```plaintext
 GET https://{language}.{project}.org/api/rest_v1/page/summary/{title}
 ```
 
@@ -43,19 +44,19 @@ This includes the `content_urls` object, which has links for various page views,
 
 Example: cURL On-Demand Article Lookup call requesting all articles named 'squirrel':
 
-```
+```shell
 curl -L "https://api.enterprise.wikimedia.com/v2/articles/squirrel" -H "Authorization: Bearer ACCESS_TOKEN"
 ```
 
 The URL of the article is stored in the [`url`](https://enterprise.wikimedia.com/docs/data-dictionary/#url) field. For example:
 
-```
+```json
 "url": "https://en.wikipedia.org/wiki/Squirrel",
 ```
 
 A link to the main Wikidata entity ID and URL is found in the [`main_entity`](https://enterprise.wikimedia.com/docs/data-dictionary/#main_entity) field. For example: 
 
-```
+```json
 "main_entity": {
             "identifier": "Q9482",
             "url": "https://www.wikidata.org/entity/Q9482",
@@ -93,7 +94,7 @@ This structure includes Commons, when referencing the file by title. For example
 
 <FilteredContent scenario="search">
 
-### Search 
+### Search
 
 `Required`
 
