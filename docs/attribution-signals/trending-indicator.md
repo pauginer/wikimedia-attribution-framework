@@ -47,7 +47,7 @@ Trending tags help readers spot results experiencing spikes in attention and bei
 
 ### AI Assistants
 
-`Required`
+`Recommended`
 
 Marking articles as trending adds contextual freshness, signaling that the information is actively updated or discussed.
 
