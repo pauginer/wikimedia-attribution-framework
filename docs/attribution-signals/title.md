@@ -8,7 +8,6 @@ Titles are generally soft-required, and their omission is acceptable in favor of
 
 <FilterButtons />
 
-
 ## Data sources {#data}
 
 This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
@@ -21,30 +20,27 @@ Available after normalization: URLs contain the title of the resource (articles,
 
 Example: cURL On-Demand Article Lookup call requesting all articles named 'squirrel':
 
-```
+```curl
 curl -L "https://api.enterprise.wikimedia.com/v2/articles/squirrel" -H "Authorization: Bearer ACCESS_TOKEN"
 ```
-Title information is included in the `name` field. For example: 
 
-```
+Title information is included in the `name` field. For example:
+
+```json
 "name": "Squirrel"
 ```
 
 [See Wikimedia Enterprise API's documentation →](https://enterprise.wikimedia.com/docs/#getting-started)
 
-
 ## Implementation guidance {#implementation}
 
 ### Minimum requirements
 
-- Show the original title of the work being reused next to the content. You might use the resource’s title to [link](link.md) it to the original page or media (i.e., an article page for Wikipedia, a file description page for Commons, an entity page for Wikidata). 
-
+- Show the original title of the work being reused next to the content. You might use the resource’s title to [link](link.md) it to the original page or media (i.e., an article page for Wikipedia, a file description page for Commons, an entity page for Wikidata).
 
 - When facing medium or spacing constraints (e.g., voice-only, very small UI), you may prioritize stating the source, author and license, and surfacing the title in a secondary location (e.g., a details view, tooltip, etc.).
 
-
 - Use the title exactly as rendered on the source page and don’t paraphrase. When titles are very long or unwieldy, or space constraints apply, you may truncate them, as long as the full title remains accessible (e.g., via hover, expand, or in the destination page).
-
 
 - Multiple titles: If your output blends content from several pages, list multiple titles (e.g., Sources: “X”, “Y”, “Z”) or reveal them via expandable details, keeping each title linked to its source.
 
@@ -60,7 +56,7 @@ Title information is included in the `name` field. For example:
 
 <FilteredContent scenario="search">
 
-### Search 
+### Search
 
 `Required`
 
