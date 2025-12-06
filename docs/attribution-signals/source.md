@@ -7,7 +7,6 @@ We recommend representing the Source attribute in text or verbalizing it in audi
 
 <!-- TODO: Mockups for Source examples-->
 
-
 ## Data sources {#data}
 
 This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
@@ -26,7 +25,6 @@ This data point is available through the Wikimedia Enterprise APIs: Source infor
 
 [See documentation →](https://enterprise.wikimedia.com/docs/#getting-started)
 
-
 ## Implementation guidance {#implementation}
 
 ### Minimum requirements
@@ -37,13 +35,11 @@ This data point is available through the Wikimedia Enterprise APIs: Source infor
 
 - Refrain from attributing aggregated content to a single Wikimedia project. Instead, clearly list all the sources being used and, if necessary, include a [Modification disclaimer](../attribution-signals/modification-disclaimer.md).
 
-
 ### Best practices
 
 - Pair the source label with a [Brand mark](../attribution-signals/brand-mark.md) to support the quick identification of Wikimedia projects.
 
 - Source might be represented using a project's [Brand mark](../attribution-signals/brand-mark.md) only when space is limited, or in interfaces with a high information density.
-
 
 ## Reuse scenarios
 
@@ -51,7 +47,7 @@ This data point is available through the Wikimedia Enterprise APIs: Source infor
 
 <FilteredContent scenario="search">
 
-### Search 
+### Search
 
 `Required`
 
@@ -68,10 +64,8 @@ Clearly indicating the Wikimedia project on search results pages helps users und
 
 In conversational interfaces, explicitly crediting Wikimedia clarifies that responses draw on a collaborative, human-curated source rather than on proprietary or opaque data.
 
-
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>
-
 
 <!-- > **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.--!>
 
