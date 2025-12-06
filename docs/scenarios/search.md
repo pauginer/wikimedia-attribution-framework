@@ -34,7 +34,7 @@ ____
 `Required`
 
 Identify the Wikimedia project from which the information originates. Use text or, exceptionally, the project’s brand mark (see 6) if space is limited.
-[See full signal spec →]((../attribution-signals/source.html))
+[See full signal spec →](../attribution-signals/source.html)
 
 **Data sources**:
 - Available through URL parsing
