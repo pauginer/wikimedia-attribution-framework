@@ -1,4 +1,4 @@
-import type { Scenario, AttributionSignal, AttributionLevel } from "./types";
+import type { Scenario, AttributionSignal, AttributionLevel, ContributionLevel } from "./types";
 
 export const scenarios: Scenario[] = [
   {
@@ -63,7 +63,7 @@ export const attributionSignals: AttributionSignal[] = [
     id: "title",
     name: "Title",
     url: "/attribution-signals/title",
-    description: "Name of the work being reused, such as a Wikipedia article or a Wikimedia Commons file",
+    description: "Name of the work being reused, such as a Wikipedia article or a Wikimedia Commons file.",
   },
   {
     id: "license",
@@ -170,26 +170,50 @@ export const attributionLevels: AttributionLevel[] = [
     name: "Basic",
     description: [
       "Explicit mention of source",
-      "Path to source (as appropriate to the medium)",
-      "Content has been reused without modification, or modifications have been noted.",
-      "All “essential” attribution signals for the use-case and format are provided",
+      "Path to source (as appropriate to the medium).",
+      "Content has been reused without modification, or modifications have been disclosed.",
+      "All “essential” attribution signals for the use-case and format are provided.",
     ],
   },
   {
     id: "approaching",
     name: "Approaching",
     description: [
-      "All “Basic” items",
-      "All “essential” attribution signals for the use-case and format are provided in context and visible with reused content",
+      "All “Basic” items; and",
+      "All “essential” attribution signals for the use-case and format are provided in context and visible with reused content.",
     ],
   },
   {
     id: "ideal",
     name: "Ideal",
     description: [
-      "All “Approaching” items",
-      "One or more additional signals beyond the essential for the reuse scenario has been used",
+      "All “Approaching” items; and",
+      "One or more additional signals beyond the essential for the reuse scenario has been used.",
       "One more active CTAs to engage with Wikimedia included in the reuse scenario.",
+    ],
+  },
+];
+
+export const contributionLevels: ContributionLevel[] = [
+  {
+    id: "minimum",
+    name: "Minimum",
+    description: [
+      "Generating more than 0 monthly visitors or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation.",
+    ],
+  },
+  {
+    id: "approaching",
+    name: "Approaching",
+    description: [
+      "Generating more than X% of the reuser traffic, or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation)",
+    ],
+  },
+  {
+    id: "elevated",
+    name: "Elevated",
+    description: [
+      "Generating more X+Y% of the reuser traffic, or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation)",
     ],
   },
 ];
