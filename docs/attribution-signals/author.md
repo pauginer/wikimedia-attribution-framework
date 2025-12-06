@@ -4,7 +4,7 @@ Credit is one of the most important reasons for attribution. It is essential for
 
 The exception in our crowdsourced knowledge ecosystem is Wikimedia Commons, a platform that hosts hundreds of thousands of images and other media files that are generally authored by a single or a smaller group of authors. Reusers embedding images and media files in their contexts must give credit to the individual creators of these materials if required by licensing.
 
-<!-- TODO: Add mockups for Source examples-->
+<!-- TODO: Add mockups for Author examples-->
 
 ## Data sources {#data}
 
