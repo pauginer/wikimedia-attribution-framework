@@ -17,3 +17,9 @@ export interface AttributionLevel {
   name: string;
   description: string[];
 }
+
+export interface ContributionLevel {
+  id: string;
+  name: string;
+  description: string[];
+}
