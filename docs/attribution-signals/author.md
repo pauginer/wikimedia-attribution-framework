@@ -66,4 +66,4 @@ Acknowledging volunteer authors adds human context, differentiating collaborativ
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>
 
-<!-- > **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.--!>
+<!-- > **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.-->
