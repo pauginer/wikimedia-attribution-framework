@@ -11,36 +11,35 @@ We recommend representing the Source attribute in text or verbalizing it in audi
 
 This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
 
-**URL parsing**
-This information must be parsed or inferred directly from the URL. In nearly all cases, the URI follows this structure: ```[language_code].[project_name].org```. Project URL roots  have to be parsed out and normalized (e.g. ```https://en.wikipedia.org/wiki/Josephine_Baker``` -> en.wikipedia -> English Wikipedia).
+### URL parsing
 
-**Static sitematrix on Meta Wikimedia**
+This information must be parsed or inferred directly from the URL. In nearly all cases, the URI follows this structure: ```[language_code].[project_name].org```. Project URL roots  have to be parsed out and normalized (e.g. ```https://en.wikipedia.org/wiki/Josephine_Baker``` → en.wikipedia → English Wikipedia).
+
+### Static sitematrix on Meta Wikimedia
+
 Wikimedia doesn’t provide a dedicated endpoint that supports fetching a human friendly “display name” based on the URL on demand. There is, however, a [static sitematrix endpoint available on Meta](https://meta.wikimedia.org/w/api.php?action=sitematrix&format=json) that returns a list of all projects hosted by Wikimedia, grouped by language. Using this endpoint, a user could look up localized “Name” and “Sitename” values to use for display purposes.
 
+### Wikimedia enterprise APIs
 
-**Wikimedia enterprise APIs** ([See documentation](https://enterprise.wikimedia.com/docs/#getting-started))
 This data point is available through the Wikimedia Enterprise APIs: Source information is included in the is_part_of field without parsing needed, and in main_entity and additional_entities under “URL/identifiers” with parsing ([See example](https://enterprise.wikimedia.com/docs/on-demand/)).
 
+[See documentation →](https://enterprise.wikimedia.com/docs/#getting-started)
 
 ## Implementation guidance {#implementation}
 
-**Minimum requirements**
+### Minimum requirements
 
 - State the name of the Wikimedia project from which the content was retrieved in a way that fits the medium (e.g., “Source: Wikidata”, “From Wikimedia Commons”, or “According to Wikipedia…”).
 
-
 - The source signal must remain accessible to all users in the context of data reuse, either in visual or auditory form. In visual interfaces, place the source label consistently near the reused content. Flexible placement of this signal is permitted only if strictly necessary (e.g., in a sources’ panel), as long as it is easily findable, identifiable and easy to associate with the content presented to end-users.
 
+- Refrain from attributing aggregated content to a single Wikimedia project. Instead, clearly list all the sources being used and, if necessary, include a [Modification disclaimer](../attribution-signals/modification-disclaimer.md).
 
-- Refrain from attributing aggregated content to a single Wikimedia project. Instead, clearly list all the sources being used and, if necessary, include a Modification disclaimer.
+### Best practices
 
+- Pair the source label with a [Brand mark](../attribution-signals/brand-mark.md) to support the quick identification of Wikimedia projects.
 
-**Best practices**
-
-- Pair the source label with Brand mark to support the quick identification of Wikimedia projects.
-
-
-Source might be represented using a project’s Brand mark only when space is limited, or in interfaces with a high information density.
+- Source might be represented using a project's [Brand mark](../attribution-signals/brand-mark.md) only when space is limited, or in interfaces with a high information density.
 
 ## Reuse scenarios
 
@@ -48,7 +47,10 @@ Source might be represented using a project’s Brand mark only when space is li
 
 <FilteredContent scenario="search">
 
-**Search** (Required)
+### Search
+
+`Required`
+
 Clearly indicating the Wikimedia project on search results pages helps users understand where the information originates and reinforces Wikimedia’s role as a trusted knowledge source.
 
 [Learn more about attribution in this context →](../scenarios/search.md)
@@ -56,15 +58,16 @@ Clearly indicating the Wikimedia project on search results pages helps users und
 
 <FilteredContent scenario="ai-assistants">
 
-**AI Assistants** (Required)
-In conversational interfaces, explicitly crediting Wikimedia clarifies that responses draw on a collaborative, human-curated source rather than on proprietary or opaque data.
+### AI Assistants
 
+`Required`
+
+In conversational interfaces, explicitly crediting Wikimedia clarifies that responses draw on a collaborative, human-curated source rather than on proprietary or opaque data.
 
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>
 
-
-> **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.
+<!-- > **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.--!>
 
 <!-- 
 <FilterButtons />
