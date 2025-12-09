@@ -33,7 +33,7 @@ We identified and prioritized reuse scenarios where Wikimedia content has the gr
   />
 </GridLayout>
 
-This is a living and growing document and we welcome suggestions and input for new scenarios not yet covered on the Attribution project discussion page. <!--TODO Add link to Attribution project Talk page>
+This is a living and growing document and we welcome suggestions and input for new scenarios not yet covered on the Attribution project discussion page. <!--TODO Add link to Attribution project Talk page -->
 
 <!-- ## Example of an embed
 
