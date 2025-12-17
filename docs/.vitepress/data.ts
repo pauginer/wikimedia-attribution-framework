@@ -199,7 +199,7 @@ export const contributionLevels: ContributionLevel[] = [
     id: "minimum",
     name: "Minimum",
     description: [
-      "Generating more than 0 monthly visitors or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation.",
+      "Generating more than 0 monthly visitors or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation).",
     ],
   },
   {
