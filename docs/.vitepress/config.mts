@@ -15,6 +15,7 @@ export default defineConfig({
     //   { text: "Home", link: "/" },
     //   { text: "Examples", link: "/markdown-examples" },
     // ],
+    nav: [{ text: "Status: Internal Preview", link: "/help" }],
     search: {
       provider: "local",
     },
