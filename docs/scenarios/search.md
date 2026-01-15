@@ -1,8 +1,8 @@
 # Search
 
-Search engines are one of the most visible and common ways people encounter Wikimedia content. Whether on classic result pages or AI-generated overviews, Wikipedia and its sister projects commonly stand as a fundamental source of the information provided to search engine users.
+Search engines are one of the most direct and common ways people encounter content from Wikimedia platforms. Whether on classic result pages or AI-generated overviews, Wikipedia and its sister projects commonly stand as one of the fundamental sources of the information provided to search engine users.
 
-Search platforms amplify Wikimedia’s reach, and are a primary gateway to free knowledge for billions of people worldwide. Consistent attribution in this scenario is necessary not only to safeguard the visibility of our projects as a source of high-quality content, but also to ensure reciprocity.
+Search platforms amplify Wikimedia’s reach, and are a primary gateway to free knowledge for billions of people worldwide. Consistent attribution in this scenario is necessary to safeguard the visibility of our projects as sources of high-quality content, and also to ensure reciprocity by offering readers clear paths for collaboration.
 
 <WikipediaAttributionDemo />
 
@@ -14,18 +14,16 @@ Search platforms amplify Wikimedia’s reach, and are a primary gateway to free 
 
 ## Essential attribution
 
-At the most basic level, when Wikimedia content appears in search results (whether as classic snippets or AI-generated summaries) it should always be clearly attributed. This means identifying Wikimedia as the source, linking back to the original page, and displaying the title and other elements as required by the content’s license and any modifications applied to it. 
+At the most basic level, when Wikimedia content appears in search results (whether as classic snippets or AI-generated summaries) it should always be clearly attributed. This means identifying the relevant Wikimedia project as the source, linking back to original pages, displaying the title and other elements as required by the content's license, and clarifying if any modifications were applied to it.
 
-Essential signals safeguard visibility for the volunteer-created projects that power the information delivered by search engines. They provide users with a transparent path to verify, explore, and potentially engage with the ecosystem where the knowledge originated.
-
-
+Essential attribution signals safeguard the visibility of the community-driven projects that power the information delivered by search engines. They also provide users with a transparent path to verify, explore, and potentially engage with the ecosystem where the knowledge originated.
 
 ![Search signal example](/media/search-signals-essential.png)
 1. [Source](#source) • 2. [Author](#author) • 3. [Link](#link) • 4. [Title](#title) • 5. [License](#license) • 6. [Brand mark](#brand-mark)
 
 <!-- • 7. [Modification disclaimer](#modification-disclaimer)*-->
 
-> **Note** All the illustrations provided are only for orientation. Reusers may adjust the appearance of the signals to follow their design guidelines and their context’s visual style in order to ensure consistency. 
+> **Note** All the illustrations provided are only for orientation. Reusers may adjust the appearance of the signals to follow their design guidelines and their context’s visual style in order to ensure consistency.
 
 ____
 
@@ -43,7 +41,6 @@ Identify the Wikimedia project from which the information originates. Use text o
 
 **High visibility on wiki.** This signal is immediately visible at the source.
 
-
 ### 2. Author {#author}
 
 `Required` based on license
@@ -54,7 +51,6 @@ When displaying media files (e.g., from Wikimedia Commons) in result pages, it's
 - [MediaWiki Action API](https://www.mediawiki.org/wiki/API:Action_API) (Allows retrieving the author of Commons media files)
 
 **Mixed visibility on wiki.** The visibility of this information varies per project. For example, it's immediately visible in Wikimedia Commons' file pages, but requires reviewing articles' history on Wikipedia.
-
 
 ### 3. Link {#link}
 
@@ -67,9 +63,7 @@ Provide direct access to the specific Wikimedia project page where the content i
 - [MediaWiki REST API](https://www.mediawiki.org/wiki/API:REST_API)
 - [Wikimedia Enterprise API](https://enterprise.wikimedia.com/docs/#getting-started)
 
-
 **High visibility on wiki.** This information is immediately visible at the source.
-
 
 ### 4. Title {#title}
 
@@ -82,7 +76,6 @@ Identify the name of the media or source page being retrieved. This is key for s
 - [Wikimedia Enterprise API](https://enterprise.wikimedia.com/docs/#getting-started)
 
 **High visibility on wiki.** This information is immediately visible at the source.
-
 
 ### 5. License {#license}
 
@@ -109,8 +102,6 @@ Use brand marks to visually identify the source of the information being reused.
 
 **High visibility on wiki.** This information is immediately visible at the source.
 
-
-
 ![Modification disclaimer example](/media/search-signals-modification.png#--float)
 
 ### 7. Modification disclaimer  {#modification-disclaimer}
@@ -126,15 +117,13 @@ Under no circumstances should aggregate content be attributed to a single source
 
 --- {.clear}
 
-
 ## Trust and relevance
 
 `Recommended` signals
 
-Beyond essential attribution, search results should help users assess the reliability of the information being surfaced. Signals such as reference counts, editor activity, or readership data make visible the processes of review, participation, and use that underpin Wikimedia projects. Highlighting these cues strengthens the credibility of both the content and the platform reusing it, while guiding audiences toward sources they can trust.
+Beyond essential attribution, search results can help users assess the reliability of the information being surfaced. Signals such as reference counts, editor activity, or readership data make visible the processes of review, participation, and use that underpin Wikimedia projects. Highlighting these cues helps strengthening the credibility of both the content and the platform reusing it, while guiding audiences toward sources they can trust.
 
-
-### Reference count 
+### Reference count
 
 Use this Wikipedia-specific credibility signal to expose the number of sources backing an article’s content.
 [See full signal spec →](../attribution-signals/reference-count.html)
@@ -144,9 +133,7 @@ Use this Wikipedia-specific credibility signal to expose the number of sources b
 
 **Medium visibility on wiki.** This information is verifiable when articles contain numbered reference lists.
 
-
-
-### Contributor count 
+### Contributor count
 
 This Wikipedia-specific trust signal indicates the number of volunteers that have contributed to create or gather the information available in the original Wikimedia project page.
 [See full signal spec →](../attribution-signals/contributor-count.html)
@@ -158,9 +145,7 @@ This Wikipedia-specific trust signal indicates the number of volunteers that hav
 
 **Medium visibility on wiki.** This information is visible, but requires accessing a data dashboard from articles' Revision history.
 
-
-
-### Page views 
+### Page views
 
 Use this signal to express the total number of views that a specific Wikimedia page has received in a predefined period of time. [See full signal spec →](../attribution-signals/page-views.html)
 
@@ -170,14 +155,11 @@ Use this signal to express the total number of views that a specific Wikimedia p
 
 **Medium visibility on wiki.** This information is visible, but requires accessing a data dashboard from articles' Revision history.
 
-
-
-### Attribution count 
+### Attribution count
 
 Use this signal to indicate (numerically or not) the popularity of a specific resource in your system, based (for example) on the number of impressions. [See full signal spec →](../attribution-signals/attribution-count.html)
 
-
-### Trending indicator 
+### Trending indicator
 
 Use this attribute to flag Wikipedia articles that are experiencing an unusual volume of recent activity, such as sharp increases in reads and/or edits that often correlate with unfolding events. [See full signal spec →](../attribution-signals/trending-indicator.html)
 
@@ -186,8 +168,7 @@ Use this attribute to flag Wikipedia articles that are experiencing an unusual v
 
 **No visibility on wiki.** This information is currently not available on Wikimedia pages.
 
-
-### Last update 
+### Last update
 
 Use this attribute to display the timestamp of the most recent edit done to the Wikimedia page being retrieved or reused (e.g., “Last update 22 September 2025”). [See full signal spec →](../attribution-signals/last-update.html)
 
@@ -198,15 +179,12 @@ Use this attribute to display the timestamp of the most recent edit done to the 
 
 **Medium visibility on wiki.** This information is available in pages' history (requires navigation).
 
-
 ## Ecosystem growth
 
 `Recommended`
 
-Attribution is not only about recognizing past contributions but also about sustaining the future of free knowledge. By including a clear participation call-to-action (CTA) in search results, reusers can help close the loop. Inviting audiences who benefit from Wikimedia content to also contribute back. This intervention supports the continued growth and renewal of Wikimedia projects, ensuring that the knowledge surfaced today keeps being enriched and expanded by volunteers tomorrow.
+Attribution is not only about credit and transparency. It can also play an essential role in sustaining the future of free knowledge. By including a clear participation call-to-action (CTA) in search results, and inviting audiences to contribute back, reusers can help complete the knowledge loop. This intervention supports the continued growth and renewal of Wikimedia projects, ensuring that the information surfaced today keeps being enriched and expanded by volunteers tomorrow.
 
-
-### Participation CTA 
+### Participation CTA
 
 Use participation CTAs to provide context-appropriate prompts to invite your audience to contribute to the Wikimedia ecosystem. [See full signal spec →](../attribution-signals/participation-cta.html)
-
