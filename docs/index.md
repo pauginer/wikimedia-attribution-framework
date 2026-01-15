@@ -6,7 +6,7 @@ import { scenarios } from './.vitepress/data'
 
 **Sustainable Reuse of Wikimedia Content**
 
-Wikimedia’s content is created by a global community of volunteers who share their knowledge freely. Every day, that free knowledge is surfaced in search engines, apps, AI assistants, social media, media publications, and countless other contexts by “reusers”.
+Wikimedia projects' content is created by a global community of volunteers who share their knowledge freely. Every day, that free knowledge is surfaced in search engines, apps, AI assistants, in social media, media publications, and countless other contexts by “reusers”.
 
 The Wikimedia Attribution Framework provides reusers with requirements and recommendations to ensure recognition is clear and consistent across contexts. Attribution is essential for fair **acknowledgment and active awareness** of Wikimedia’s human-made, verified, high-quality content. It is a key factor in the continued growth and sustainability of the free knowledge ecosystem. The framework exists to:
 
