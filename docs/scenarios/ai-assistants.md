@@ -8,7 +8,7 @@ We prioritized this scenario because Wikimedia content is already widely used as
 
 In conversational interfaces, where answers are often blended from multiple sources, basic attribution ensures that users can clearly identify when knowledge comes from Wikimedia projects. Every mention of Wikimedia content should provide transparent source information, a path back to the original page, and required license or modification details, when applicable. These elements establish Wikimedia as a visible and verifiable source within AI-generated dialogue.
 
-![AI signal example](../public/media/ai-signals-essential.png)
+![AI signal example](/media/ai-signals-essential.png)
 1. [Source](#source) • 2. [Author](#author) • 3. [Link](#link) • 4. [Title](#title) • 5. [License](#license) • 6. [Brand mark](#brand-mark) · 7. [Modification disclaimer](#modification-disclaimer)
 
 > **Note**: All the illustrations provided are only for orientation. Reusers may adjust the appearance of the signals to follow their design guidelines and their context’s visual style in order to ensure consistency.

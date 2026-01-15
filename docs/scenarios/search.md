@@ -7,7 +7,7 @@ Search platforms amplify Wikimedia’s reach, and are a primary gateway to free 
 <WikipediaAttributionDemo />
 
 <!---
-![Search attribution overview](../public/media/search-overview.png)
+![Search attribution overview](/media/search-overview.png)
 *Mockup of a Search engine results page displaying minimal (left) and a combination of essential and recommended attribution signals (right)*
 
 > **Note** All the illustrations provided are only for orientation. Reusers may adjust the appearance of the signals to follow their design guidelines and their context’s visual style in order to ensure consistency. -->
@@ -20,7 +20,7 @@ Essential signals safeguard visibility for the volunteer-created projects that p
 
 
 
-![Search signal example](../public/media/search-signals-essential.png)
+![Search signal example](/media/search-signals-essential.png)
 1. [Source](#source) • 2. [Author](#author) • 3. [Link](#link) • 4. [Title](#title) • 5. [License](#license) • 6. [Brand mark](#brand-mark)
 
 <!-- • 7. [Modification disclaimer](#modification-disclaimer)*-->
@@ -111,7 +111,7 @@ Use brand marks to visually identify the source of the information being reused.
 
 
 
-![Modification disclaimer example](../public/media/search-signals-modification.png#--float)
+![Modification disclaimer example](/media/search-signals-modification.png#--float)
 
 ### 7. Modification disclaimer  {#modification-disclaimer}
 

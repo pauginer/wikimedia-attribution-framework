@@ -1,5 +1,6 @@
 <script setup>
 import { attributionLevels } from './.vitepress/data'
+import { contributionLevels } from './.vitepress/data'
 </script>
 
 # Principles and levels
