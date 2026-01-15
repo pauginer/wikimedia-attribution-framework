@@ -41,21 +41,21 @@ MediaWiki REST API can return the HTML of a page. Users would then have to parse
 
 ### Minimum requirements
 
-- Present article references as a single count (e.g., “XX references”).
+- Indicate all article references as a single count (e.g., “XX references”).
 
 - Always display the number of references contained by the article being reused: avoid aggregating references across language versions of an article, or using the reference value corresponding to a different language variant of the source.
 
-- Keep it neutral: Use a stable label (“References”) and a simple integer. Avoid phrasings or visual representations that assign quality ratings to this attribute. The very presence of references is enough to allow readers to infer credibility.
+- Keep the indicator neutral: Use a clear label (“References”) and a simple number. Avoid phrasings or visual representations that could cause this attribute to be interpreted as an indicator of quality. The presence of references is enough to allow readers to infer credibility.
 
-- Keep page views signals secondary to core attribution (such as Source, Link/Access, Title) and avoid replacing or obscuring these.
+- Keep the Reference count signal secondary to essential attribution (such as Source, Link, Title) and avoid replacing or obscuring these.
 
 ### Best practices
 
-- Pair with complementary attributes to increase impact. When combined with [Last update](last-update.md) or [Contributor count](contributor-count.md), this signal can help highlight the scale and the recency of collaboration.
+- Pair with complementary attributes to increase impact. When combined with [Last update](last-update.md) or [Contributor count](contributor-count.md), the Reference count signal can help highlight the scale and the recency of collaboration.
 
-- Conditionally display this signal to make sure that it will have a positive impact on users’  perception: Consider showing the references count only when above a threshold, or fall back to a non-numeric label (e.g., “Supported by references”) when the count is low.
+- Conditionally display this signal to make sure that it will have a positive impact on users’ perception. Consider showing the references count only when above a threshold, or fall back to a non-numeric label (e.g., “Supported by references”) when the count is low.
 
-- Consider expanding on the meaning of this signal using complementary information (e.g., displaying a tooltip that clarifies that this is the “Number of sources cited in a Wikipedia article”).
+- Consider clarifying the meaning of the Reference count signal using complementary information (e.g., displaying a tooltip that specifies that this is the “Number of sources cited in a Wikipedia article”).
 
 ## Reuse scenarios
 
