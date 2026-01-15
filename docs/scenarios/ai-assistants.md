@@ -1,12 +1,12 @@
 # AI assistants
 
-AI-powered chatbots and agents increasingly serve as an intermediary between users and knowledge. Unlike traditional search results, answers often blend information from multiple sources into a single conversation, making attribution more challenging but also vital.
+AI-powered chatbots and agents increasingly serve as intermediaries between users and knowledge. Unlike traditional search results, AI assistants often blend information from multiple sources into single answers, making attribution challenging but also most vital.
 
-We prioritized this scenario because Wikimedia content is already widely used as a source in LLM systems. Ensuring attribution in conversational contexts will ensure proper credit for our community of contributors, help preserve transparency, and highlight Wikimedia as a trusted source of human-curated information in the age of AI.
+We prioritized this scenario because Wikimedia projects' content is already widely used as a source in LLM systems. Ensuring attribution in conversational contexts will ensure proper credit for our community of contributors, help preserve transparency, and highlight Wikimedia projects as trusted sources of human-curated information in the age of AI.
 
 ## Essential attribution
 
-In conversational interfaces, where answers are often blended from multiple sources, basic attribution ensures that users can clearly identify when knowledge comes from Wikimedia projects. Every mention of Wikimedia content should provide transparent source information, a path back to the original page, and required license or modification details, when applicable. These elements establish Wikimedia as a visible and verifiable source within AI-generated dialogue.
+In conversational interfaces, where answers are frequently blended from multiple sources, basic attribution ensures that users can clearly identify when knowledge comes from Wikimedia projects. Every mention of Wikimedia content in AI contexts should provide transparent source information, a path back to the original page and, when applicable, required license details and/or modification disclaimers. These elements establish Wikimedia as a visible and verifiable source within AI-generated dialogue.
 
 ![AI signal example](../public/media/ai-signals-essential.png)
 1. [Source](#source) • 2. [Author](#author) • 3. [Link](#link) • 4. [Title](#title) • 5. [License](#license) • 6. [Brand mark](#brand-mark) · 7. [Modification disclaimer](#modification-disclaimer)
@@ -116,7 +116,7 @@ In contrast, under no circumstances should aggregate content be attributed to a 
 
 `Recommended` signals
 
-For AI responses to be credible, users need more than a simple citation. Trust signals such as reference counts, contributor activity, and readership data demonstrate that Wikimedia knowledge is the product of collective review and active use. Highlighting these attributes within chatbot responses reinforces both the reliability of the information and the integrity of the conversational system presenting it.
+Beyond simple citations, trust signals such as reference counts, contributor activity, and readership data can help support the credibility of AI-generated responses. These signals demonstrate that the knowledge hosted in Wikimedia platforms is the product of active review and collaboration, reinforcing both the reliability of the information and the conversational system presenting it.
 
 ### Reference count
 
@@ -186,7 +186,7 @@ Use this attribute to indicate the most recent update of a Wikimedia page as a  
 
 `Recommended`
 
-Conversational systems should not only reuse, but also help sustain the renewal of the knowledge they depend on. A participation call-to-action (CTA) embedded in responses or source panels could facilitate the transition of users from consumers to contributors. By creating visible paths back to editing and engagement, AI agents can play a role in keeping the cycle of free knowledge active and inclusive.
+LLM systems have the power to support the sustainability of the knowledge they reuse and depend on. A participation call-to-action (CTA) embedded in responses or source panels could facilitate the transition of users from consumers to contributors. By creating visible paths back to editing and engagement, AI assistants can play a key role in keeping the cycle of free knowledge active.
 
 ### Participation CTA
 
