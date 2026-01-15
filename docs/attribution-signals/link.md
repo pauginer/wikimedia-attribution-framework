@@ -52,7 +52,7 @@ The URL of the article is stored in the [`url`](https://enterprise.wikimedia.com
 "url": "https://en.wikipedia.org/wiki/Squirrel",
 ```
 
-A link to the main Wikidata entity ID and URL is found in the [`main_entity`](https://enterprise.wikimedia.com/docs/data-dictionary/#main_entity) field. For example: 
+A link to the main Wikidata entity ID and URL is found in the [`main_entity`](https://enterprise.wikimedia.com/docs/data-dictionary/#main_entity) field. For example:
 
 ```json
 "main_entity": {
