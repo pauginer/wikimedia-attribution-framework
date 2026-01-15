@@ -1,6 +1,6 @@
 # Source
 
-Reusers of Wikimedia content must explicitly identify the project they are extracting information from as their Source. Clear sourcing is fundamental for attribution in an information ecosystem where third-party platforms mix and recontextualize Wikimedia content. This recognition supports trust, transparency, and compliance with open licenses.
+Reusers of Wikimedia project's content must explicitly identify the Source of the information being surfaced in their contexts. Clear sourcing is fundamental for attribution in an information ecosystem where third-party platforms mix and recontextualize Wikimedia content. This recognition supports trust, transparency, and compliance with open licenses.
 Identifying sources ensures that the contributions of Wikimedia volunteers remain visible and that end-users can recognize the origin of the knowledge they are consuming.
 
 We recommend representing the Source attribute in text or verbalizing it in audio format in a way that fits the medium (e.g., (from) Wikidata, (according to) Wikipedia...). When facing space constraints or in interfaces with high  information density, it’s acceptable to use the project’s [Brand mark](brand-mark.html) to represent the source.
@@ -37,9 +37,9 @@ This data point is available through the Wikimedia Enterprise APIs: Source infor
 
 ### Best practices
 
-- Pair the source label with a [Brand mark](../attribution-signals/brand-mark.md) to support the quick identification of Wikimedia projects.
+- Pair the source label with a visual [Brand mark](../attribution-signals/brand-mark.md) to support the quick identification of Wikimedia projects.
 
-- Source might be represented using a project's [Brand mark](../attribution-signals/brand-mark.md) only when space is limited, or in interfaces with a high information density.
+- A project's [Brand mark](../attribution-signals/brand-mark.md) might be used to indicate the source only when space is limited, or in interfaces with a high information density.
 
 ## Reuse scenarios
 
@@ -62,7 +62,7 @@ Clearly indicating the Wikimedia project on search results pages helps users und
 
 `Required`
 
-In conversational interfaces, explicitly crediting Wikimedia clarifies that responses draw on a collaborative, human-curated source rather than on proprietary or opaque data.
+In conversational interfaces, explicitly crediting Wikimedia projects clarifies that responses draw on a human-curated source.
 
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>
