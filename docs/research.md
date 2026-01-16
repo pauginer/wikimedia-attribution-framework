@@ -7,7 +7,7 @@ This page brings together the research materials that provide the empirical foun
 ### Quantitative Study on Attribution: Search and AI assistants — November 2025
 
 **Research lead**: Mike Raish, Lead Design Researcher at the Wikimedia Foundation
-<!-- TODO Add link to full report !-->
+(Read the full report →)[https://meta.wikimedia.org/wiki/Research:Initial_Attribution_Signal_Measurement]
 
 #### Summary of the findings
 
