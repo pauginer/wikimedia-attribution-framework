@@ -81,19 +81,19 @@ export const attributionSignals: AttributionSignal[] = [
     id: "modification-disclaimer",
     name: "Modification disclaimer",
     url: "/attribution-signals/modification-disclaimer",
-    description: "Indication that the content has been modified, adapted, or built upon the information extracted from the original source.",
+    description: "Indication that the content has been modified, adapted, or built upon after its extraction from the original source.",
   },
   {
     id: "reference-count",
     name: "Reference count",
     url: "/attribution-signals/reference-count",
-    description: "Number of references supporting Wikimedia content at the time of citation or reuse.",
+    description: "Number of references supporting a Wikipedia article at the time of citation or reuse.",
   },
   {
     id: "contributor-count",
     name: "Contributor count",
     url: "/attribution-signals/contributor-count",
-    description: "Total number of unique human editors who have helped create and maintain the contents.",
+    description: "Total number of unique human editors who have helped create and maintain the content.",
   },
   {
     id: "page-views",
