@@ -44,7 +44,7 @@ GET /pageviews/per-article/{project}/{access}/{agent}/{article}/{granularity}/{s
 
 ## Reuse scenarios
 
-The page views signal provides a simple, familiar cue about audience attention that can help end-users gauge relevance at a glance. This attribute can be specially useful to indicate relevance of resources in the following contexts:
+The page views signal provides a simple, familiar cue about audience attention that can help end-users gauge relevance at a glance. This attribute can be specially useful to express the relevance of resources in the following contexts:
 
 <FilterButtons />
 
