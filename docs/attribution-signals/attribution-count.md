@@ -2,7 +2,7 @@
 
 The Attribution count signal reflects the popularity or relevance of a specific Wikimedia source (e.g., a Wikipedia article) in its context of reuse. For example, the attribute can be used to express how many times a given page has been cited or accessed by users on your system or, in its non-numerical form, to indicate the relevance of that source in your platform, based on user activity (e.g., “Top result” in a search engine scenario).
 
-This attribute demonstrates a transparent partnership with Wikimedia projetcs as relevant knowledge providers. Attribution counts can also spark user engagement, encouraging further exploration and helping drive traffic back to sources, where curiosity could turn into a meaningful contribution to the free knowledge ecosystem.
+This attribute demonstrates a transparent partnership with Wikimedia projects as relevant knowledge providers. Attribution counts can also spark user engagement, encouraging further exploration and helping drive traffic back to sources, where curiosity could turn into a meaningful contribution to the free knowledge ecosystem.
 
 <!-- TODO: Mockups for Attribution count examples-->
 
