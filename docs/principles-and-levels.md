@@ -37,7 +37,7 @@ Emphasizes content created and verified by humans, and gives credit to the commu
   />
 </GridLayout>
 
-**Contributing back**. In connection to the levels of attribution,there are different levels of impact related to the extent that reuse generates engagement on Wikimedia projects.
+**Contributing back**. In connection to the levels of attribution, there are different levels of impact related to the extent that reuse generates engagement on Wikimedia projects.
 
 <GridLayout>
   <Card 
