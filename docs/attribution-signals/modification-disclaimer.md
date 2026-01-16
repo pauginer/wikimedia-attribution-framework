@@ -4,7 +4,7 @@ Reusers of content from Wikimedia projects must share Modification disclaimers t
 
 Clear modification disclaimers protect Wikimedia projects from misinterpretation. They prevent edits, errors, or deteriorations introduced downstream from being mistaken as genuine Wikimedia content. Disclaimers also preserve transparency by allowing readers to distinguish between unaltered knowledge curated by Wikimedia volunteers and derivative versions.
 
-By flagging modifications,reusers help support the health of Wikimedia's open knowledge ecosystem and sustain its credibility.
+By flagging modifications, reusers help support the health of Wikimedia's open knowledge ecosystem and sustain its credibility.
 
 <!-- TODO: Mockups for Modification disclaimer examples-->
 
