@@ -13,7 +13,7 @@ While different reusers rely on Wikipedia to produce their content, Wikipedia be
 
 ### Recognizable elsewhere
 
-When Wikipedia contents are distributed on external platforms (i.e., Reusers), we want to make sure that their users know where the contents come from, and they have a way to access the original content.
+When Wikipedia contents are distributed on external platforms (i.e., Reusers), we want to make sure that their users know where the contents come from, and that they have a way to access the original content.
 
 ### Trustworthy, verifiable content
 
@@ -37,7 +37,7 @@ Emphasizes content created and verified by humans, and gives credit to the commu
   />
 </GridLayout>
 
-**Contributing back**. In connection to the levels of attribution, there are expected levels of impact related to enabling external audiences to engage with Wikimedia projects.
+**Contributing back**. In connection to the levels of attribution, there are different levels of impact related to the extent that reuse generates engagement on Wikimedia projects.
 
 <GridLayout>
   <Card 
