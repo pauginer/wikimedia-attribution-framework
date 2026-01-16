@@ -6,7 +6,7 @@ const { filteredItems } = useFilter()
 
 # Attribution Signals
 
-Attribution signals are the specific elements that keep Wikimedia projects visible when their content is surfaced in external contexts. Signals provide direct acknowledgment and access to the source, and present additional information that helps end users evaluate and engage with the knowledge they encountered.
+Attribution signals are the specific elements that keep Wikimedia projects visible when their content is surfaced in external contexts. Signals provide direct acknowledgment and access to sources, and present additional information that helps end users evaluate and engage with the knowledge they encountered.
 
 The signals included in this framework were selected because they serve one or more of the following purposes:
 
