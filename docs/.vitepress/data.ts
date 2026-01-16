@@ -11,25 +11,25 @@ export const scenarios: Scenario[] = [
   {
     id: "ai-assistants",
     name: "AI Assistants",
-    description: "Integrating Wikimedia text, media, or data into AI-driven responses.",
+    description: "Integrating text, media, or data from Wikimedia projects into AI-driven responses.",
     url: "/scenarios/ai-assistants",
   },
   {
     id: "social",
     name: "Social media [coming soon]",
-    description: "Sharing Wikimedia content in online social contexts - in online forums, chat and messaging services, social networking platforms.",
+    description: "Sharing content from Wikimedia projects in online social contexts, such as online forums, chat and messaging services, social networking platforms.",
     url: "/scenarios/social",
   },
   {
     id: "games-rich-experiences",
     name: "Games and Rich media [coming soon]",
-    description: "Incorporating Wikimedia text, images, or data in educational and interactive environments.",
+    description: "Incorporating text, images, or data from Wikimedia platforms in educational and interactive environments.",
     url: "/scenarios/games-rich-experiences",
   },
   {
     id: "media-outlets",
     name: "Media and publications [coming soon]",
-    description: "Using Wikimedia text, images, or data in articles, journals, blogs, etc.",
+    description: "Using text, images, or data from Wikimedia projects in articles, journals, blogs, etc.",
     url: "/scenarios/media-outlets",
   },
   {
