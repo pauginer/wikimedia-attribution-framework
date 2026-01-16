@@ -13,7 +13,7 @@ The signals included in this framework were selected because they serve one or m
 - Ensure compliance with licensing and attribution requirements.
 - Strengthen trust by giving visibility to the processes and the community behind Wikimedia projects.
 - Provide transparency about how up-to-date or how widely used the knowledge is.
-- Support the long-term growth of the free knowledge ecosystem by providing participation and contribution pathways.
+- Support the long-term growth of the free knowledge ecosystem by exposing pathways for contribution and collaboration.
 
 <br>
 <div>
