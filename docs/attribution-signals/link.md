@@ -2,7 +2,7 @@
 
 Reusers must provide direct access to the original Wikimedia project page(s) from where the reused content was drawn (e.g., the specific Wikipedia article, the Commons file page, or the Wikidata entity).
 
-This is an essential attribution requirement that preserves verifiability by letting end-users access information at the source with a single click. Links can also contribute to sustaining open-knowledge by returning traffic to the Wikimedia ecosystem, where readers can verify information, learn further, or even contribute edits.
+This is an essential attribution requirement that preserves verifiability by letting end-users access information at the source with a single click. Links can also contribute to sustaining open knowledge by returning traffic to the Wikimedia ecosystem, where readers can verify information, learn further, or even contribute edits.
 
 Links can take the form of text (e.g., the title of the article or image being shared, or a complete URL) or be represented by direct affordances (e.g., “Read full article”).
 
