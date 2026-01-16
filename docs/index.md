@@ -10,7 +10,7 @@ Wikimedia projects' content is created by a global community of volunteers who s
 
 The Wikimedia Attribution Framework provides reusers with requirements and recommendations to ensure recognition is clear and consistent across contexts. Attribution is essential for fair **acknowledgment and active awareness** of Wikimedia’s human-made, verified, high-quality content. It is a key factor in the continued growth and sustainability of the free knowledge ecosystem. The framework exists to:
 
-- Simplify attribution practices by providing a flexible and dynamic set of specifications supportin the implementation of compliant and consistent attribution for all reuser types.
+- Simplify attribution practices by providing a flexible and dynamic set of specifications supporting the implementation of compliant and consistent attribution for all reuser types.
 
 - Showcase Wikimedia content as reliable, fresh, and human-made through the use of recommended trust and relevance signals (e.g., reference count, latest update).
 
