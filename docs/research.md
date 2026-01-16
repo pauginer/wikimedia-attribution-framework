@@ -1,6 +1,6 @@
 # Research and resources
 
-This page brings together the research materials that provide the empirical foundation for the principles of Wikimedia's attribution framework. As our work progresses, we'll continue to add new findings and resources to support a clearer, evidence-based understanding of the impact of attribution across reuse scenarios.
+This page brings together the research materials that provide the empirical foundation for the principles of Wikimedia's attribution framework. As our work progresses, we will continue to add new findings and resources to support a clearer, evidence-based understanding of the impact of attribution across reuse scenarios.
 
 ## Relevant studies
 
