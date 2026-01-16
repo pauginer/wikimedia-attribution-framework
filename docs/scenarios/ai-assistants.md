@@ -2,7 +2,7 @@
 
 AI-powered chatbots and agents increasingly serve as intermediaries between users and knowledge. Unlike traditional search results, AI assistants often blend information from multiple sources into single answers, making attribution challenging but also most vital.
 
-We prioritized this scenario because Wikimedia projects' content is already widely used as a source in LLM systems. Ensuring attribution in conversational contexts will ensure proper credit for our community of contributors, help preserve transparency, and highlight Wikimedia projects as trusted sources of human-curated information in the age of AI.
+We prioritized this scenario because Wikimedia projects' content is already widely used as a source in LLM systems. Including attribution in conversational contexts will ensure proper credit for our community of contributors, help preserve transparency, and highlight Wikimedia projects as trusted sources of human-curated information in the age of AI.
 
 ## Essential attribution
 
@@ -116,7 +116,7 @@ In contrast, under no circumstances should aggregate content be attributed to a 
 
 `Recommended` signals
 
-Beyond simple citations, trust signals such as reference counts, contributor activity, and readership data can help support the credibility of AI-generated responses. These signals demonstrate that the knowledge hosted in Wikimedia platforms is the product of active review and collaboration, reinforcing both the reliability of the information and the conversational system presenting it.
+Beyond simple citations, trust signals such as reference counts, contributor activity, and readership data can help support the credibility of AI-generated responses. These signals demonstrate that the knowledge hosted on Wikimedia platforms is the product of active review and collaboration, reinforcing both the reliability of the information and the conversational system presenting it.
 
 ### Reference count
 
@@ -170,7 +170,7 @@ Use this attribute to flag Wikipedia articles that are experiencing an unusual v
 
 ### Last update
 
-Use this attribute to indicate the most recent update of a Wikimedia page as a  timestamp (e.g., “Last update 22 September 2025”) or a relative format (“Updated 3 minutes ago”). [See full signal spec →](../attribution-signals/last-update.html)
+Use this attribute to indicate the most recent update of a Wikimedia page as a timestamp (e.g., “Last update 22 September 2025”) or a relative format (“Updated 3 minutes ago”). [See full signal spec →](../attribution-signals/last-update.html)
 
 **Data sources**:
 
@@ -186,7 +186,7 @@ Use this attribute to indicate the most recent update of a Wikimedia page as a  
 
 `Recommended`
 
-LLM systems have the power to support the sustainability of the knowledge they reuse and depend on. A participation call-to-action (CTA) embedded in responses or source panels could facilitate the transition of users from consumers to contributors. By creating visible paths back to editing and engagement, AI assistants can play a key role in keeping the cycle of free knowledge active.
+LLM systems have the power to support the sustainability of the knowledge they reuse and depend on. A participation call-to-action (CTA) embedded in responses or source panels has the potential to facilitate the transition of users from consumers to contributors. By creating visible paths back to editing and engagement, AI assistants can play a key role in keeping the cycle of free knowledge active.
 
 ### Participation CTA
 
