@@ -2,7 +2,7 @@
 
 The Title signal indicates the name of the work being reused, such as a Wikipedia article or a Wikimedia Commons file. This information is key to enabling the identification of original resources in external contexts.
 
-It’s commonly accepted, and practical, to use the source’s title as text for the link to the original page or media being shared. When used as link text, titles help users both recognize the work and navigate directly to the source.
+It's commonly accepted, and practical, to use the source's title as text for the link to the original page or media being shared. When used as link text, titles help users both recognize the work and navigate directly to the source.
 
 Titles are generally soft-required. Their truncation or omission is acceptable in favor of other core attributes, such as [Source](source.md), when space is constrained or information density is too high.
 
@@ -38,13 +38,13 @@ Title information is included in the `name` field. For example:
 
 ### Minimum requirements
 
-- Show the original title of the work being reused next to the content. You might use the title to [link](link.md) to the source (i.e., an article page on Wikipedia, a file description page on Wikimedia Commons, an entity page on Wikidata).
+- Show the original title of the work being reused next to the content. You might use the title to [link](link.md) to the source (e.g., an article page on Wikipedia, a file description page on Wikimedia Commons, or an entity page on Wikidata).
 
-- When facing medium or spacing constraints (e.g., voice-only, limited real state on a user interface), you may prioritize stating the source, author and license, and surface the title in a secondary location (e.g., a details view, tooltip, etc.).
+- When facing medium or spacing constraints (e.g., voice-only, limited real estate on a user interface), you may prioritize stating the source, author and license, and surface the title in a secondary location (e.g., a details view, tooltip, etc.).
 
-- Don't paraphrase. Always use the title exactly as rendered on the source page. If space constraints apply, you may truncate titles, as long as the full text remains accessible (e.g., via hover, expand, or in the linked source or destination page).
+- Don't paraphrase. Always use the title exactly as rendered on the source page. If space constraints apply, you may truncate titles, as long as their full text remains accessible (e.g., via hover, expand, or in the linked source or destination page).
 
-- If your output blends content from several pages, list alltheir titles (e.g., Sources: “X”, “Y”, “Z”) and keep each title linked to its source.
+- If your output blends content from several pages, list all their titles (e.g., Sources: “X”, “Y”, “Z”) and keep each title linked to its source.
 
 ### Best practices
 
