@@ -172,7 +172,7 @@ export const attributionLevels: AttributionLevel[] = [
       "Explicit mention of source",
       "Path to source (as appropriate to the medium).",
       "Content has been reused without modification, or modifications have been disclosed.",
-      "All “essential” attribution signals for the use-case and format are provided.",
+      "All “essential” attribution signals for the use case and format are provided.",
     ],
   },
   {
@@ -180,7 +180,7 @@ export const attributionLevels: AttributionLevel[] = [
     name: "Approaching",
     description: [
       "All “Basic” items; and",
-      "All “essential” attribution signals for the use-case and format are provided in context and visible with reused content.",
+      "All “essential” attribution signals for the use case and format are provided in context and visible with reused content.",
     ],
   },
   {
@@ -189,7 +189,7 @@ export const attributionLevels: AttributionLevel[] = [
     description: [
       "All “Approaching” items; and",
       "One or more additional signals beyond the essential for the reuse scenario has been used.",
-      "One more active CTAs to engage with Wikimedia included in the reuse scenario.",
+      "One more active CTAs to engage with Wikimedia is included in the reuse scenario.",
     ],
   },
 ];
@@ -206,14 +206,14 @@ export const contributionLevels: ContributionLevel[] = [
     id: "approaching",
     name: "Approaching",
     description: [
-      "Generating more than X% of the reuser traffic, or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation)",
+      "Generating more than X% of the reuser traffic, or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation).",
     ],
   },
   {
     id: "elevated",
     name: "Elevated",
     description: [
-      "Generating more X+Y% of the reuser traffic, or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation)",
+      "Generating more than X+Y% of the reuser traffic, or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation).",
     ],
   },
 ];
