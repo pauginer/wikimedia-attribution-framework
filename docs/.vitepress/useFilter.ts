@@ -17,13 +17,18 @@ const selectedFilter: Ref<Scenario> = ref(allScenario);
 const allScenarios: Scenario[] = [allScenario, ...scenarios];
 
 // Computed property for filtered items
+//TODO Remove temporary rule to exclude Donation CTA from being displayed as a 
+//card in overview.md once more information about this signal is available
 const filteredItems: ComputedRef<AttributionSignal[]> = computed(() => {
+  const baseSignals = attributionSignals.filter(
+    (signal) => signal.id !== "donation-cta"
+  );
   if (selectedFilter.value.id === "all") {
-    return attributionSignals;
+    return baseSignals;
   }
 
-  const signalIds = scenarioSignalsMap[selectedFilter.value.id];
-  return attributionSignals.filter((signal) => signalIds.includes(signal.id));
+  const signalIds = scenarioSignalsMap[selectedFilter.value.id] ?? [];
+  return baseSignals.filter((signal) => signalIds.includes(signal.id));
 });
 
 // Select filter function

@@ -125,6 +125,13 @@ export const attributionSignals: AttributionSignal[] = [
     url: "/attribution-signals/participation-cta",
     description: "Context-appropriate prompts that invite end users to contribute to Wikimedia projects",
   },
+  // TODO: Replace temporary donation-cta description by final version once available
+  {
+    id: "donation-cta",
+    name: "Donation CTA",
+    url: "/attribution-signals/donation-cta",
+    description: "Context-appropriate prompts that invite end users to donate to Wikimedia projects",
+  },
 ];
 
 export const scenarioSignalsMap: Record<Scenario["id"], string[]> = {
