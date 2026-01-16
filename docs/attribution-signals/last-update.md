@@ -2,7 +2,7 @@
 
 The Last update signal displays the timestamp of the most recent edit done to the Wikimedia page being cited or reused (e.g., “Last update 22 September 2025”).
 
-This attribute highlights recency and makes editorial activity transparent, reinforcing the perception of Wikimedia projects as a living resources. Showing when a Wikimedia page was last updated gives readers a quick way to see that the information they are being provided is actively maintained, which positively impacts trust on its relevance and accuracy.
+This attribute highlights recency and makes editorial activity transparent, reinforcing the perception of Wikimedia projects as a living resources. Showing when a Wikimedia page was last updated gives readers a quick way to see that the information they are being provided is actively maintained, which can positively impact trust on relevance and accuracy.
 
 <!-- TODO: Mockups for Last update examples-->
 
