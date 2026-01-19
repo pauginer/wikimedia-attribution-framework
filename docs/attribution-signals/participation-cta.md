@@ -12,13 +12,13 @@ The goal of these interventions is to provide pathways for contribution, to chan
 
 ### Minimum requirements
 
-- Coordinate with Wikimedia to determine which predefined contribution pathways (e.g., structured or recommended edit tasks in Wikipedia) could be used, and how to design Participation CTAs that better fit your context.
-
 - Keep essential attribution primary: Participation CTAs are secondary attribution interventions and they must not obscure or replace primary signals (i.e., Source, Author, Link, Title, etc.).
 
 ### Best practices
 
 - If usage data is available, the recommended practice is to target users who consistently demonstrate curiosity about content from Wikimedia projects (e.g., consistently navigate to the Wikimedia sources being shared).
+
+- Coordinate with Wikimedia to determine which predefined contribution pathways (e.g., structured or recommended edit tasks in Wikipedia) could be used, and how to design Participation CTAs that better fit your context.
 
 ## Reuse scenarios
 
