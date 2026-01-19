@@ -1,8 +1,8 @@
 # License
 
-Reusers should indicate the license under which the Wikimedia content is available and, where possible, link to the full license text. This is a core component of Creative Commons attribution, and helps audiences understand the terms of reuse. License attribution is generally required, but its omission due to space constraints is acceptable as long as the content or media being shared belong to the public domain.
+Reusers should indicate the license under which the Wikimedia content is available and, where possible, link to the full license text. This is a core component of [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/) attribution, and it helps audiences understand the terms of reuse of the content they are consuming. License attribution is generally required, but its omission due to space constraints is acceptable as long as the content or media being shared belong to the public domain.
 
-For Wikimedia text content, reuse is typically under CC BY-SA 4.0, but it’s worth keeping in mind that media files (images, audio, video) on Wikimedia Commons can carry individually assigned licenses. These must be respected and expressed in external context, specially if any restrictions apply.
+While the text content from Wikimedia projects is typically under a CC BY-SA 4.0 licebse, it’s worth keeping in mind that media files (images, audio, video) on Wikimedia Commons can carry individually assigned licenses. These must be respected and expressed in external context, especially if any restrictions apply.
 
 Including the license (and linking to its full text) makes permissions explicit, educates users about open source, and helps sustain a healthy, transparent knowledge ecosystem.
 
@@ -12,7 +12,7 @@ Including the license (and linking to its full text) makes permissions explicit,
 
 ## Data sources {#data}
 
-This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that content reusers can rely on to implement the signal accurately and consistently.
+This section identifies where and how the data behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that content reusers can rely on to implement the signal accurately and consistently.
 
 ### MediaWiki Action API
 
@@ -70,29 +70,29 @@ This on-demand API may be used to fetch:
 
 ### Visual assets
 
-If you wish to represent licenses visually, Creative Commons make available a library of [logos and badges](https://creativecommons.org/mission/downloads/).
+If you wish to represent licenses visually, Creative Commons makes available a library of [logos and badges](https://creativecommons.org/mission/downloads/).
 
 ## Implementation guidance {#implementation}
 
 ### Minimum requirements
 
-License attribution strongly depends on the type of content being shared, and the implications of the specific license assigned to that content:
+The requiredness of license attribution strongly depends on the type of content being shared and the implications of the specific license assigned to that content:
 
-- For reused text content, you may include a licensing notice that states that the work is released under CC BY-SA (the common license for Wikimedia projects) and provide a link to the license text.
+- For reused text content, you may verify and include a licensing notice that states that the work is released under an open license (commonly CC BY-SA for Wikimedia projects) and provide a link to the license text.
 
-- For media from Wikimedia Commons, display the specific file’s license (e.g., CC BY, CC BY-SA, CC0, Public Domain) and ensure that end-users can reach license details (which are always available in the original file page).
+- When sharing media from Wikimedia Commons, display the specific file’s license as indicated at the source (e.g., CC BY, CC BY-SA, CC0, Public Domain) and ensure that end users can reach license details (which are always available in the original file page).
 
 ### Best practices
 
-- Use human-readable labeling plus the formal code, e.g., “Freely licensed (CC BY-SA 4.0)”, and link the license name to the license deed in [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/).
+- Use human-readable labels to clarify the license code (e.g., “Freely licensed (CC BY-SA 4.0)”), and link the license name to its deed in [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/).
 
-- You might use [Creative Commons badges](https://creativecommons.org/share-your-work/cclicenses/) to express the content’s license in a more visually prominent way.
+- You might use [Creative Commons badges](https://creativecommons.org/share-your-work/cclicenses/) to express the content's license in a more compact and visual way.
 
 - Place license information near the reused item:
-  - Text: show the license with the attribution block or in a visible “About this content” or credits area.
-  - Images and media: show license alongside the asset (caption/overlay/credit line) and link to the Wikimedia Commons file page (which exposes author, source, and license in a single location) or directly to the license deed from the context of reuse.
+  - Text: Show the license with the attribution block or in a visible “About this content” or credits area.
+  - Images and media: Show the license alongside the asset (caption/overlay/credit line) and link to the Wikimedia Commons file page (which exposes author, source, and license in a single location) or directly to the license deed from the context of reuse.
 
-- In multi-source experiences (e.g., chatbot/LLM), allow users to access individual license information for each item. Flexible placement is allowed under space constraints.
+- In multi-source experiences (e.g., AI assistants), allow users to access individual license information for each item. Flexible placement is allowed to overcome space constraints.
 
 ## Reuse scenarios
 
@@ -104,7 +104,7 @@ License attribution strongly depends on the type of content being shared, and th
 
 `Required`
 
-Displaying license information clarifies reuse conditions, fostering responsible reuse of search results.
+Displaying license information clarifies reuse conditions, fostering the responsible distribution of content and media in search results.
 
 [Learn more about attribution in this context →](../scenarios/search.md)
 </FilteredContent>

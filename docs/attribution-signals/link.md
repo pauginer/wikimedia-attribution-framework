@@ -1,16 +1,16 @@
 # Link
 
-Reusers must provide direct access to the original Wikimedia page(s) from where the reused content was drawn (e.g., the specific Wikipedia article, the Commons file page, or the Wikidata entity).
+Reusers must provide direct access to the original Wikimedia project page(s) from where the reused content was drawn (e.g., the specific Wikipedia article, the Commons file page, or the Wikidata entity).
 
-This is an essential attribution element that preserves verifiability by letting end-users access information at the source with a single click. Links can also contribute to sustain the open-knowledge ecosystem by returning traffic to Wikimedia, where readers can explore context, see authorship, donate, or even contribute edits.
+This is an essential attribution requirement that preserves verifiability by letting end-users access information at the source with a single click. Links can also contribute to sustaining open knowledge by returning traffic to the Wikimedia ecosystem, where readers can verify information, learn further, or even contribute edits.
 
-Links can take the form of text (e.g., the title of the article or image being shared, or a complete URL) or be represented by direct affordances (e.g., “Read full article” link or interactive cards).
+Links can take the form of text (e.g., the title of the article or image being shared, or a complete URL) or be represented by direct affordances (e.g., “Read full article”).
 
 <!-- TODO: Add mockups for Link examples-->
 
 ## Data sources {#data}
 
-This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
+This section identifies where and how the data behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
 
 ### MediaWiki Action API
 
@@ -52,7 +52,7 @@ The URL of the article is stored in the [`url`](https://enterprise.wikimedia.com
 "url": "https://en.wikipedia.org/wiki/Squirrel",
 ```
 
-A link to the main Wikidata entity ID and URL is found in the [`main_entity`](https://enterprise.wikimedia.com/docs/data-dictionary/#main_entity) field. For example: 
+A link to the main Wikidata entity ID and URL is found in the [`main_entity`](https://enterprise.wikimedia.com/docs/data-dictionary/#main_entity) field. For example:
 
 ```json
 "main_entity": {
@@ -73,17 +73,18 @@ This structure includes Commons, when referencing the file by title. For example
 
 ### Minimum requirements
 
-- Provide a hyperlink to the exact Wikimedia page being reused, never to the homepage (e.g., wikipedia.org). For example, link to article pages on Wikipedia, to the file description pages in Wikimedia Commons, or the entity pages in Wikidata.
+- Provide a hyperlink to the exact Wikimedia project page being reused, never to the homepage (e.g., wikipedia.org). For example, link to article pages on Wikipedia, to the file description pages in Wikimedia Commons, or entity pages in Wikidata.
 
-- Every source requires a link: when content is drawn from multiple Wikimedia pages, allow users to access back to each individual source of information.
+- Every source requires a link: when content is drawn from multiple pages, allow users to access back to each individual source of information.
 
 - Avoid exposing raw URLs and opt for concise, descriptive labels instead. You may use the [Source](source.md) or [Title](title.md) attributes as text for your link, or provide a clear navigation affordance that fits your context and is clearly associated with the reused content.
 
 ### Best practices
 
-- In visual interfaces, make sure that the link is part of or visible next to the reused content, guaranteeing that it is not hidden in secondary pages, or collapsible areas such as menus or accordions.
+- In visual interfaces, make sure that links are part of or visible next to the reused content. Links shouldn't
+ be hidden in secondary pages or collapsible areas such as menus or accordions.
 
-- In constrained environments such as small-screens or compact UIs, you may use icons, shortlinks, or other affordances to ensure one-tap access back to the source.
+- In constrained environments, like small screens or compact UIs, you may use icons, short links, or other affordances to ensure one-tap access back to the source.
 
 ## Reuse scenarios
 
@@ -111,4 +112,4 @@ Linking back to the specific article offers transparency and supports explainabi
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>
 
-<!-- > **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.-->
+<!-- **Note**  All the illustrations provided are only for orientation. You may adjust the appearance of the signals to follow your design guidelines and visual style in order to ensure consistency in your context.-->

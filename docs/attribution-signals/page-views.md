@@ -1,6 +1,6 @@
 # Page views
 
-The page views signal indicates how often a Wikimedia project page (e.g., a Wikipedia article) has been visited over a defined period of time. Displaying page views can help reusers highlight the popularity and relevance of a source.
+The page views signal indicates how often a Wikimedia project page has been visited over a defined period of time (e.g., the last 24 hours, the last 30 days). Displaying page views can help reusers highlight the popularity and relevance of a source.
 
 <!-- TODO: Mockups for Page views count examples-->
 
@@ -44,7 +44,7 @@ GET /pageviews/per-article/{project}/{access}/{agent}/{article}/{granularity}/{s
 
 ## Reuse scenarios
 
-The page views signal provides a simple, familiar cue of audience attention that can help end-users gauge relevance at a glance. This attribute can be specially useful to indicate relevance of resources in the following contexts:
+The page views signal provides a simple, familiar cue about audience attention that can help end-users gauge relevance at a glance. This attribute can be specially useful to express the relevance of resources in the following contexts:
 
 <FilterButtons />
 

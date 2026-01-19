@@ -1,8 +1,8 @@
 # Last update
 
-The Last update signal displays the timestamp of the most recent edit done to the Wikimedia page being cited or reused (e.g., “Last update 22 September 2025”). 
+The Last update signal displays the timestamp of the most recent edit done to the Wikimedia page being cited or reused (e.g., “Last update 22 September 2025”).
 
-This attribute highlights recency and makes editorial activity transparent, reinforcing the perception of Wikimedia projects as a living resources. Showing when a Wikimedia page was last updated gives readers a quick way to see that the information they are being provided is actively maintained, which positively impacts trust on its relevance and accuracy.
+This attribute highlights recency and makes editorial activity transparent, reinforcing the perception of Wikimedia projects as a living resources. Showing when a Wikimedia page was last updated gives readers a quick way to see that the information they are being provided is actively maintained, which can positively impact trust on relevance and accuracy.
 
 <!-- TODO: Mockups for Last update examples-->
 
@@ -10,7 +10,7 @@ This attribute highlights recency and makes editorial activity transparent, rein
 
 ## Data sources {#data}
 
-This section identifies where and how the data point behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
+This section identifies where and how the data behind this signal can be obtained. It points to the relevant Wikimedia APIs, datasets, or metadata fields that reusers can rely on to implement the signal accurately and consistently.
 
 ### MediaWiki REST API
 
@@ -70,7 +70,7 @@ curl -L "https://api.enterprise.wikimedia.com/v2/articles/squirrel" -H "Authoriz
 
 ### Minimum requirements
 
-- Surface the last edit timestamp of the specific article version you reused. Display either as a relative indicator (“Last updated 2 days ago”) or  an absolute date in the user’s locale. When using absolute dates, you may specify longer (“Last updated 22 September, 2025”) or shorter formats (“Last update 09/2025”).
+- Surface the last edit timestamp of the specific article version you reused. Display either as a relative indicator (e.g., “Last updated 2 days ago”) or  an absolute date in the user’s locale. When using absolute dates, you may specify longer (e.g.,“Last updated 22 September, 2025”) or shorter formats (e.g.,“Last update 09/2025”).
 
 - Make the attribute visible near the reused summary/title, or alongside other attribution elements.
 
@@ -90,7 +90,7 @@ The Last update signal makes Wikimedia’s constant editorial activity visible a
 
 `Recommended`
 
-Displaying last edit dates reassures users that the responses offered are current and actively maintained.
+Displaying last edit dates reassures users that the responses offered are actively maintained and up-to-date.
 
 [Learn more about attribution in this context →](../scenarios/search.md)
 </FilteredContent>
@@ -101,7 +101,7 @@ Displaying last edit dates reassures users that the responses offered are curren
 
 `Recommended`
 
-Including edit timestamps supports transparency and helps users judge information freshness in generated text.
+Including edit timestamps supports transparency and helps users judge the up-to-dateness of the sources used to generate responses.
 
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>

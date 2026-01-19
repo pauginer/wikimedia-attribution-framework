@@ -1,6 +1,6 @@
 # Contributor count
 
-Contributor count is a Wikipedia-specific signal. It indicates the total number of unique human editors who have helped create and maintain a Wikipedia article (e.g., “117 contributors”).
+The Contributor count signal indicates the total number of unique editors who have helped create and maintain a Wikipedia article (e.g., “117 contributors”).
 
 This attribute makes the presence of the community that creates and curates Wikipedia’s content transparent to external audiences. It highlights the scale of the collaborative editorial process behind open knowledge projects, making explicit the human effort that keeps Wikipedia one of the most trusted sources of free knowledge.
 
@@ -15,6 +15,8 @@ This section identifies where and how the data point behind this signal can be o
 ### Wikimedia dumps
 
 Public datasets include full revision histories that can be used to calculate editor counts programmatically.
+
+[See Wikimedia Downloads Index →](https://dumps.wikimedia.org/backup-index.html)
 
 ### MediaWiki REST API
 
@@ -62,7 +64,7 @@ Using this request will require counting the number of entries included in the r
 
 - Display, in plain text, the number of unique contributors who have edited the Wikipedia page being shared: e.g., “128 contributors”.
 
-- Keep it neutral: avoid expressing, textually nor visually, that a higher contributor count equals to higher quality. This signal conveys collaboration, and it shouldn’t be treated as a correctness rating.
+- Keep it neutral: avoid expressing, textually or visually, that a higher contributor count equals higher quality. This signal conveys collaboration, and it shouldn’t be treated as a correctness rating.
 
 - Keep contributor count signals secondary to core attribution (such as Source, Link/Access, Title) and avoid replacing or obscuring these.
 
@@ -76,7 +78,7 @@ Using this request will require counting the number of entries included in the r
 
 ## Reuse scenarios
 
-The Contributor count signal can strengthen understanding and trust across contexts where audiences may not realize that Wikimedia content is human-made and community-curated. It is particularly relevant for high-visibility integrations that reuse Wikipedia content without a clear connection to its volunteer origins.
+The Contributor count signal can strengthen understanding and trust across contexts where audiences may not realize that Wikimedia content is human-made and community-curated.
 
 <FilterButtons />
 
@@ -86,7 +88,7 @@ The Contributor count signal can strengthen understanding and trust across conte
 
 `Recommended`
 
-Display the Contributor count as part of the source snippet to highlight human authorship. This builds trust and emphasizes the scale of collaboration behind the source.
+Display the Contributor count signal as part of the snippet to highlight human authorship and emphasize the scale of collaboration behind the source.
 
 [Learn more about attribution in this context →](../scenarios/search.md)
 </FilteredContent>

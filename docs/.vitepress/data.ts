@@ -11,25 +11,25 @@ export const scenarios: Scenario[] = [
   {
     id: "ai-assistants",
     name: "AI Assistants",
-    description: "Integrating Wikimedia text, media, or data into AI-driven responses.",
+    description: "Integrating text, media, or data from Wikimedia projects into AI-driven responses.",
     url: "/scenarios/ai-assistants",
   },
   {
     id: "social",
     name: "Social media [coming soon]",
-    description: "Sharing Wikimedia content in online social contexts - in online forums, chat and messaging services, social networking platforms.",
+    description: "Sharing content from Wikimedia projects in online social contexts, such as online forums, chat and messaging services, social networking platforms.",
     url: "/scenarios/social",
   },
   {
     id: "games-rich-experiences",
     name: "Games and Rich media [coming soon]",
-    description: "Incorporating Wikimedia text, images, or data in educational and interactive environments.",
+    description: "Incorporating text, images, or data from Wikimedia platforms in educational and interactive environments.",
     url: "/scenarios/games-rich-experiences",
   },
   {
     id: "media-outlets",
     name: "Media and publications [coming soon]",
-    description: "Using Wikimedia text, images, or data in articles, journals, blogs, etc.",
+    description: "Using text, images, or data from Wikimedia projects in articles, journals, blogs, etc.",
     url: "/scenarios/media-outlets",
   },
   {
@@ -81,19 +81,19 @@ export const attributionSignals: AttributionSignal[] = [
     id: "modification-disclaimer",
     name: "Modification disclaimer",
     url: "/attribution-signals/modification-disclaimer",
-    description: "Indication that the content has been modified, adapted, or built upon the information extracted from the original source.",
+    description: "Indication that the content has been modified, adapted, or built upon after its extraction from the original source.",
   },
   {
     id: "reference-count",
     name: "Reference count",
     url: "/attribution-signals/reference-count",
-    description: "Number of references supporting Wikimedia content at the time of citation or reuse.",
+    description: "Number of references supporting a Wikipedia article at the time of citation or reuse.",
   },
   {
     id: "contributor-count",
     name: "Contributor count",
     url: "/attribution-signals/contributor-count",
-    description: "Total number of unique human editors who have helped create and maintain the contents.",
+    description: "Total number of unique human editors who have helped create and maintain the content.",
   },
   {
     id: "page-views",
@@ -124,6 +124,13 @@ export const attributionSignals: AttributionSignal[] = [
     name: "Participation CTA",
     url: "/attribution-signals/participation-cta",
     description: "Context-appropriate prompts that invite end users to contribute to Wikimedia projects",
+  },
+  // TODO: Replace temporary donation-cta description by final version once available
+  {
+    id: "donation-cta",
+    name: "Donation CTA",
+    url: "/attribution-signals/donation-cta",
+    description: "Context-appropriate prompts that invite end users to donate to Wikimedia projects",
   },
 ];
 
@@ -199,7 +206,7 @@ export const contributionLevels: ContributionLevel[] = [
     id: "minimum",
     name: "Minimum",
     description: [
-      "Generating more than 0 monthly visitors or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation.",
+      "Generating more than 0 monthly visitors or equivalent engagement conversions to Wikimedia projects (contributions, donations, participation).",
     ],
   },
   {
