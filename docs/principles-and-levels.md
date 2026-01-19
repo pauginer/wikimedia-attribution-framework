@@ -13,7 +13,7 @@ While different reusers rely on Wikipedia or other data from Wikimedia projects 
 
 ### Recognizable elsewhere
 
-When content from Wikimedia projects is distributed on external platforms (i.e., Reusers), we want to make sure that their audiences know where the contents come from, and that they have a way to access original sources.
+When content from Wikimedia projects is distributed on external platforms (i.e., Reusers), we want to make sure that their audiences know where the content comes from, and that they have a way to access original sources.
 
 ### Trustworthy, verifiable content
 
