@@ -7,13 +7,13 @@ import { contributionLevels } from './.vitepress/data'
 
 ## Principles
 
-### Keep Wikipedia visible
+### Keep Wikimedia content visible
 
-While different reusers rely on Wikipedia to produce their content, Wikipedia becomes invisible to users on those other platforms/contexts. Over time, it may become harder to attract new contributors if they are not aware of the project and understand its value.
+While different reusers rely on Wikipedia or other data from Wikimedia projects for their products, their application without attribution means Wikimedia projects become invisible to users on those other platforms/contexts. Over time, it may become harder to attract new contributors if they are not aware of the project and understand its value.
 
 ### Recognizable elsewhere
 
-When Wikipedia contents are distributed on external platforms (i.e., Reusers), we want to make sure that their users know where the contents come from, and that they have a way to access the original content.
+When content from Wikimedia projects is distributed on external platforms (i.e., Reusers), we want to make sure that their audiences know where the contents come from, and that they have a way to access original sources.
 
 ### Trustworthy, verifiable content
 
