@@ -1,6 +1,6 @@
 # Participation CTA
 
-Participation CTAs are context-appropriate prompts that invite end users to contribute to Wikimedia projects from off-platform experiences. In the context of Wikipedia, for example, these CTAs might encourage users to add images or links, or translate articles to new languages.
+Participation CTAs are context-appropriate prompts that invite end users to participate in Wikimedia projects as relevant to the off-platform experiences. In the context of Wikipedia, for example, call-to-actions (CTAs) might encourage users to create an account, download the app; or more contribution CTAs such as adding images or links, or translating articles into new languages.
 
 The goal of these interventions is to provide pathways for contribution, to channel the audience's interest into on-wiki participation, and to promote the sustainability of the volunteer ecosystem that keeps the content of Wikimedia projects high quality, collaborative and up-to-date.
 
@@ -32,7 +32,7 @@ Participation CTAs can turn off-platform experiences into constructive contribut
 
 `Recommended`
 
-Inviting users to suggest edits or contribute transforms passive reading into active participation, fostering the flow of free knowledge.
+Inviting users to learn more or dive more deeply on a topic, or suggesting edits to contribute transforms passive reading into active participation, fostering  the flow of free knowledge.
 
 [Learn more about attribution in this context →](../scenarios/search.md)
 </FilteredContent>
@@ -43,7 +43,7 @@ Inviting users to suggest edits or contribute transforms passive reading into ac
 
 `Recommended`
 
-Participation CTAs like “Improve this article on Wikipedia” connect conversational experiences to opportunities for contribution.
+CTAs like “save this to my reading list on Wikipedia” or “Suggest an edit to improve this article” connect conversational experiences to opportunities for participation.
 
 [Learn more about attribution in this context →](../scenarios/ai-assistants.md)
 </FilteredContent>
